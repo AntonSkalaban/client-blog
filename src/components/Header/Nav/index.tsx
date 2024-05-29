@@ -2,6 +2,7 @@ import { FC } from "react";
 import { NavLink } from "react-router-dom";
 
 import "./style.scss";
+
 const pages = [
   { name: "Main", path: "" },
   { name: "Blog", path: "1" },

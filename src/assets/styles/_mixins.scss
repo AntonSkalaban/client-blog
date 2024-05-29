@@ -1,0 +1,21 @@
+@import './colors';
+
+@mixin buttonMixin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 700;
+    padding: 16px 48px;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+@mixin  buttonYellow {
+    @include buttonMixin;
+    background-color: $color-yellow;
+    color: $color-black;
+}

@@ -1,5 +1,11 @@
 import { FC } from "react";
 
+import { StepByStep } from "components";
+
 export const Home: FC = () => {
-  return <section>Home</section>;
+  return (
+    <section>
+      <StepByStep />
+    </section>
+  );
 };
