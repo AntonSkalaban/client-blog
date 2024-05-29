@@ -1,0 +1,17 @@
+.feature-posts {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin-top: 128px;
+
+    &__title {
+        margin-bottom: 32px;
+    }
+
+    &__post-container {
+        width: 733px;
+    }
+   
+}
+
+

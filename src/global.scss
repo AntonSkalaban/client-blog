@@ -1,12 +1,51 @@
 @import 'assets/styles/fonts';
-
+@import 'assets/styles/colors';
+@import 'assets/styles/mixins';
 
 body {
     font-family: $font-infer;
     font-style: normal;
+    box-sizing: border-box;
 }
 
 button {
     font-family: $font-sen;
     font-style: normal;
+    border: none;
 }
+
+.button-yellow {
+    @include buttonMixin;
+    background-color: $color-yellow;
+    color: $color-black;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    line-height: 28px;
+}
+.page-title3 {
+    font-family: $font-sen;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: $color-black;
+}
+
+
+.page-title4 {
+    font-family: $font-sen;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -1px;
+}
+
+
+

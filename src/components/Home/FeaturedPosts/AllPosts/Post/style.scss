@@ -1,0 +1,30 @@
+@import 'assets/styles/colors';
+
+.post {
+    width: 517px;
+    height: 181px;
+
+    box-sizing: border-box;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-bottom: 25px;
+
+    cursor: pointer;
+
+    &:hover {
+       background-color: $color-light;
+    }
+
+    &__content {
+        width: 370px;
+    }
+
+    &__title {
+        line-height: 32px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+

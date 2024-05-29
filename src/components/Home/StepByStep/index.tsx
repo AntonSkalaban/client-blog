@@ -22,7 +22,7 @@ export const StepByStep: FC = () => {
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur. Excepteur sint occaecat cupidatat non proident.
             </p>
-            <button className="step-by-step__button">Read More {">"}</button>
+            <button className="button-yellow">Read More {">"}</button>
           </div>
         </div>
       </Wrapper>

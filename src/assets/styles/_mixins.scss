@@ -19,3 +19,7 @@
     background-color: $color-yellow;
     color: $color-black;
 }
+
+@mixin borderGrey {
+    border: 1px solid $color-grey;
+}

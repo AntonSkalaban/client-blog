@@ -1,0 +1,26 @@
+@import 'assets/styles/mixins';
+
+.feature-post{
+    width: 669px;
+    height: 660px;
+
+ 
+    @include borderGrey;
+    padding: 32px;
+
+    &__img-container {
+        width: 669px;
+        height: 352px;
+        margin-bottom: 32px;
+    }
+
+    &__title {
+        margin-top: 16px;
+    }
+
+    &__text {
+        margin-top: 16px;
+        margin-bottom: 32px;
+        line-height: 28px;
+    }
+}
