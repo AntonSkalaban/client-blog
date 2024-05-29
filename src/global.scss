@@ -2,18 +2,29 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    src: url(../src/assets/fonts/Inter-Bold.ttf) format('ttf');
+    src: url(../src/assets/fonts/Inter/Inter-Bold.ttf) format('ttf');
 }
 
 @font-face {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    src: url(../src/assets/fonts/Inter-Regular.ttf) format('ttf');
+    src: url(../src/assets/fonts/Inter/Inter-Regular.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../src/assets/fonts/Sen/Sen-Bold.ttf) format('ttf');
 }
 
 
 
 body {
     font-family: 'Inter', sans-serif;
+}
+
+button {
+    font-family: 'Sen', sans-serif;
 }
