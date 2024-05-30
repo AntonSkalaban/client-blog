@@ -14,37 +14,13 @@ button {
     border: none;
 }
 
-.button-yellow {
-    @include buttonMixin;
-    background-color: $color-yellow;
-    color: $color-black;
 
-    &:hover {
-        background-color: $color-yellow-dark;
-    }
-}
 
 img {
     width: 100%;
     height: 100%;
 }
 
-.display {
-    font-family: $font-sen;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 64px;
-    letter-spacing: -2px;
-}
-
-.cap {
-    font-family: $font-infer;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
 
 h1 {
     font-family: $font-sen;
@@ -118,4 +94,31 @@ p {
 .text-normal {
     font-size: 14px;
     line-height: 20px;
+}
+
+.display {
+    font-family: $font-sen;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -2px;
+}
+
+.cap {
+    font-family: $font-infer;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.button-yellow {
+    @include buttonMixin;
+    background-color: $color-yellow;
+    color: $color-black;
+
+    &:hover {
+        background-color: $color-yellow-dark;
+    }
 }

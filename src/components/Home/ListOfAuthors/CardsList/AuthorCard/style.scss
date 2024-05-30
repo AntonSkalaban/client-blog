@@ -1,0 +1,33 @@
+@import 'assets/styles/mixins';
+@import 'assets/styles/colors';
+
+.author-card {
+    width: 296px;
+    height: 324px;
+
+    @include flexCenter;
+    flex-direction: column;
+    gap: 20px;
+
+    background-color: $color-grey-light;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-yellow-light;
+    }
+
+    &__img-container {
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+    }
+
+    &__text {
+        color: $color-grey;
+    }
+
+    &__media-container {
+        display: flex;
+        gap: 16px;
+    }
+}

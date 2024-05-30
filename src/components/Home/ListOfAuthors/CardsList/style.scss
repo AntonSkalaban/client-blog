@@ -1,0 +1,7 @@
+@import 'assets/styles/mixins';
+
+.authors-cards-list {
+    margin-top: 48px;
+
+    @include flexBetween
+}
