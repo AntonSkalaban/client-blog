@@ -18,6 +18,10 @@ button {
     @include buttonMixin;
     background-color: $color-yellow;
     color: $color-black;
+
+    &:hover {
+        background-color: $color-yellow-dark;
+    }
 }
 
 img {

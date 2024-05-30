@@ -1,0 +1,33 @@
+@import 'assets/styles/colors';
+
+.special-post {
+    position: relative;
+    margin-top: 128px;
+
+    &__img-container {
+        width: 949px;
+        height: 705px;
+    }
+
+    &__content {
+        width: 546px;
+        height: 424px;
+    
+        background-color: $color-white;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        padding: 80px;
+    }
+
+    &__title {
+        margin-top: 24px;
+    }
+
+    &__text {
+        color: $color-grey;
+        margin-top: 16px;
+        margin-bottom: 32px;
+    }
+}
