@@ -1,7 +1,5 @@
-import { ReactNode } from "react";
-
 export interface CategoryCardProps {
-  image: ReactNode;
+  image: string;
   title: string;
   text: string;
 }

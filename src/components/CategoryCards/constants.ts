@@ -7,22 +7,22 @@ import { Category } from "./types";
 
 export const categories: Category[] = [
   {
-    image: <Business />,
+    image: Business,
     title: "Business",
     text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
   },
   {
-    image: <Startup />,
+    image: Startup,
     title: "Startup",
     text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
   },
   {
-    image: <Economy />,
+    image: Economy,
     title: "Economy",
     text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
   },
   {
-    image: <Technology />,
+    image: Technology,
     title: "Technology",
     text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
   },

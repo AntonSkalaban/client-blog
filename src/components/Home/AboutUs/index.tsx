@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 import "./style.scss";
 
-export const AboutUs: FC = () => {
+const AboutUs: FC = () => {
   return (
     <section className="about-us">
       <div className="about-us__decor-line">
@@ -35,3 +35,5 @@ export const AboutUs: FC = () => {
     </section>
   );
 };
+
+export default AboutUs;

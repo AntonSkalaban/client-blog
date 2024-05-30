@@ -1,7 +1,5 @@
-import { ReactNode } from "react";
-
 export interface Category {
-  image: ReactNode;
+  image: string;
   title: string;
   text: string;
 }

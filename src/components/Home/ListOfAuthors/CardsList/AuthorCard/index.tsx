@@ -23,7 +23,7 @@ export const AuthorCard: FC<AuthorCardProps> = ({ card }) => {
       <div className="author-card__media-container">
         {Object.entries(mediaIcons).map(([key, icon]) => (
           <NavLink key={key} to={contacts[key as keyof Author["contacts"]]}>
-            {icon}
+            <img src={icon} />
           </NavLink>
         ))}
       </div>
