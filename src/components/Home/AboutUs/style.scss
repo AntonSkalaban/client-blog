@@ -3,6 +3,10 @@
 .about-us {
     position: relative;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     background-color: $color-light-pink;
     padding: 96px 80px;
     margin-top: 151px;
@@ -24,21 +28,20 @@
         }
     }
 
-    &__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    &__cap {
+        color: $color-dark-blue;
     }
-
+    
     &__block {
        width: 515px;
     }
 
-    &__title3 {
+    &__title {
         margin-top: 24px;
     }
 
     &__text {
         margin-top: 16px;
+        margin-bottom: 16px;
     }
 }

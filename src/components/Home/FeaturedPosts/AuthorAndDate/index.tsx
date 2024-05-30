@@ -5,7 +5,7 @@ import { AuthorAndDateProps } from "./types";
 
 export const AuthorAndDate: FC<AuthorAndDateProps> = ({ author, date }) => {
   return (
-    <p className="author-and-date">
+    <p className="text-normal">
       By <NavLink to={""}>{author}</NavLink> | {date}
     </p>
   );

@@ -25,10 +25,32 @@ img {
     height: 100%;
 }
 
-p {
-    line-height: 28px;
+.display {
+    font-family: $font-sen;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -2px;
 }
-.page-title3 {
+
+.cap {
+    font-family: $font-infer;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: $font-sen;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -2px;
+}
+
+h2 {
     font-family: $font-sen;
     font-weight: 700;
     font-size: 36px;
@@ -37,8 +59,7 @@ p {
     color: $color-black;
 }
 
-
-.page-title4 {
+h3 {
     font-family: $font-sen;
     font-style: normal;
     font-weight: 700;
@@ -47,7 +68,32 @@ p {
     letter-spacing: -1px;
 }
 
-.page-title5 {
+h4 {
+    font-family: $font-sen;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+
+h5 {
+    font-family: $font-sen;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+
+h6 {
+    font-family: $font-sen;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+
+h5 {
+    font-family: $font-sen;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
@@ -55,5 +101,17 @@ p {
     text-transform: uppercase;
 }
 
+p {
+    font-family: $font-infer;
+    font-weight: 400;
+}
 
+.text-big {
+    font-size: 16px;
+    line-height: 28px;
+}
 
+.text-normal {
+    font-size: 14px;
+    line-height: 20px;
+}

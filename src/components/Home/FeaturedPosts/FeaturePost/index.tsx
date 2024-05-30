@@ -14,8 +14,8 @@ export const FeaturePost: FC<FeaturePostProps> = ({ post }) => {
       </div>
 
       <AuthorAndDate author={author} date={date} />
-      <h4 className="feature-post__title page-title4">{title}</h4>
-      <p className="feature-post__text">{text}</p>
+      <h3 className="feature-post__title">{title}</h3>
+      <p className="text-big feature-post__text">{text}</p>
       <button className="button-yellow">Read More {">"}</button>
     </div>
   );

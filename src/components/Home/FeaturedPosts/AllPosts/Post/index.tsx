@@ -15,7 +15,7 @@ export const Post: FC<PostProps> = ({ post, activePostId, onClick }) => {
       <div className="post__content">
         <AuthorAndDate author={author} date={date} />
 
-        <h4 className="post__title">{title}</h4>
+        <h4>{title}</h4>
       </div>
     </article>
   );
