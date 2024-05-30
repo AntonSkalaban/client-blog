@@ -1,0 +1,26 @@
+@import 'assets/styles/colors';
+@import 'assets/styles/mixins';
+
+.testimonials {
+    height: 310px;
+
+    display: flex;
+  
+    background-color: $color-yellow-light;
+    padding: 92px 112px;
+    margin-top: 96px;
+
+    &__static {
+        width: 349px;
+        padding-right: 80px;
+    }
+
+    &__title {
+        margin-top: 12px;
+    }
+
+    &__text {
+        margin-top: 16px;
+        color: $color-dark-blue;
+    }
+}

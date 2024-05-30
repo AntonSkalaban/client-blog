@@ -7,6 +7,7 @@ import {
   ListOfAuthors,
   SpecialPost,
   StepByStep,
+  Testimonials,
   Wrapper,
 } from "components";
 
@@ -20,6 +21,7 @@ export const Home: FC = () => {
         <Category />
         <SpecialPost />
         <ListOfAuthors />
+        <Testimonials />
       </Wrapper>
     </section>
   );

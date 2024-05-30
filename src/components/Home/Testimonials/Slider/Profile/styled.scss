@@ -1,0 +1,13 @@
+@import 'assets/styles/mixins';
+
+.profile {
+    width: fit-content;
+
+    display: flex;
+    gap: 16px;
+
+    &__img-container {
+        width: 48px;
+        height: 48px;
+    }
+}
