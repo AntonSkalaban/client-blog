@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { AboutUs, FeaturePosts, StepByStep, Wrapper } from "components";
+import { AboutUs, Category, FeaturePosts, StepByStep, Wrapper } from "components";
 
 export const Home: FC = () => {
   return (
@@ -9,6 +9,7 @@ export const Home: FC = () => {
       <Wrapper>
         <FeaturePosts />
         <AboutUs />
+        <Category />
       </Wrapper>
     </section>
   );
