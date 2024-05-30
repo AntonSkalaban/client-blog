@@ -11,7 +11,7 @@ export const StepByStep: FC = () => {
         <div className="step-by-step__overlay" />
         <div className="step-by-step__container">
           <div className="step-by-step__content">
-            <h5 className="step-by-step__subtitle">
+            <h5 className="page-title5 step-by-step__subtitle">
               Posted on <span className="step-by-step__subtitle_bold">startup</span>
             </h5>
             <h2 className="step-by-step__title">Step-by-step guide to choosing great font pairs</h2>

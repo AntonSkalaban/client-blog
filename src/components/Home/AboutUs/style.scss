@@ -1,0 +1,44 @@
+@import 'assets/styles/colors';
+
+.about-us {
+    position: relative;
+
+    background-color: $color-light-pink;
+    padding: 96px 80px;
+    margin-top: 151px;
+
+    &__decor-line {
+        width: 80%;
+        height: 23px;
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+        background-color: $color-yellow;
+
+        &_purple {
+            width: 25%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            background-color: $color-purple;
+        }
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__block {
+       width: 515px;
+    }
+
+    &__title3 {
+        margin-top: 24px;
+    }
+
+    &__text {
+        margin-top: 16px;
+    }
+}

@@ -23,7 +23,7 @@ export const FeaturePosts: FC = () => {
       <div>
         {" "}
         <h3 className="page-title3 feature-posts__title">All Posts</h3>
-        <AllPosts posts={posts.slice(0, 4)} openPost={hanldeOpenPost} />
+        <AllPosts posts={posts.slice(0, 4)} onClick={hanldeOpenPost} activePostId={openPost.id} />
       </div>
     </section>
   );

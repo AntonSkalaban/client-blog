@@ -4,11 +4,11 @@ import { Post } from "./Post";
 import { AllPostsProps } from "./types";
 import "./style.scss";
 
-export const AllPosts: FC<AllPostsProps> = ({ posts, openPost }) => {
+export const AllPosts: FC<AllPostsProps> = ({ posts, activePostId, onClick }) => {
   return (
     <section className="all-posts">
       {posts.map((post) => (
-        <Post key={`${post.date}-${post.author}`} post={post} onClick={openPost} />
+        <Post key={post.id} post={post} onClick={onClick} activePostId={activePostId} />
       ))}
     </section>
   );
