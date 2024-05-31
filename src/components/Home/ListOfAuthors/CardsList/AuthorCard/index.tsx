@@ -1,17 +1,18 @@
 import { FC } from "react";
-import { NavLink } from "react-router-dom";
+import Image from "next/image";
+import Link from "next/link";
 
 import { Author } from "../types";
 import { mediaIcons } from "./constants";
 import { AuthorCardProps } from "./types";
 import "./style.scss";
 
-export const AuthorCard: FC<AuthorCardProps> = ({ card }) => {
+const AuthorCard: FC<AuthorCardProps> = ({ card }) => {
   const { image, name, profession, company, contacts } = card;
   return (
     <div className="author-card">
       <div className="author-card__img-container">
-        <img src={image} />
+        <Image src={image} alt="author-avatar" />
       </div>
       <div>
         <h3>{name}</h3>
@@ -22,11 +23,13 @@ export const AuthorCard: FC<AuthorCardProps> = ({ card }) => {
 
       <div className="author-card__media-container">
         {Object.entries(mediaIcons).map(([key, icon]) => (
-          <NavLink key={key} to={contacts[key as keyof Author["contacts"]]}>
-            <img src={icon} />
-          </NavLink>
+          <Link key={key} href={contacts[key as keyof Author["contacts"]]}>
+            <Image className="author-card__icon" src={icon} alt="media-icon" />
+          </Link>
         ))}
       </div>
     </div>
   );
 };
+
+export default AuthorCard;

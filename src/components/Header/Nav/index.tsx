@@ -1,5 +1,6 @@
 import { FC } from "react";
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import "./style.scss";
 
@@ -10,22 +11,28 @@ const pages = [
   { name: "Contac Us", path: "3" },
 ];
 
-export const Nav: FC = () => {
-  const setActive = ({ isActive }: { isActive: boolean }) => {
-    return "nav__link " + (isActive ? "nav__link_active" : "");
-  };
+const Nav: FC = () => {
+  // const setActive = ({ isActive }: { isActive: boolean }) => {
+  //   return ;
+  // };
+  const pathname = usePathname();
 
   return (
     <nav className="nav">
       {pages.map(({ name, path }) => {
         return (
           <div className="nav__item" key={path}>
-            <NavLink className={setActive} to={"/" + path}>
+            <Link
+              className={"nav__link " + (pathname === path ? "nav__link_active" : "")}
+              href={path}
+            >
               {name}
-            </NavLink>
+            </Link>
           </div>
         );
       })}
     </nav>
   );
 };
+
+export default Nav;

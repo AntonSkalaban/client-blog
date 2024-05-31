@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import "./styled.scss";
 
-export const Video: FC = () => {
+const Video: FC = () => {
   return (
     <iframe
       className="video"
@@ -13,3 +13,5 @@ export const Video: FC = () => {
     />
   );
 };
+
+export default Video;

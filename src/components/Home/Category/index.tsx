@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { CategoryCards } from "components";
+import CategoryCards from "components/CategoryCards";
 
 import "./style.scss";
 

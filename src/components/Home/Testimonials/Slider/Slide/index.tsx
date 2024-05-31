@@ -1,9 +1,10 @@
 import { FC } from "react";
 
-import { Profile } from "../Profile";
+import Profile from "../Profile";
 import { SliderProps } from "./types";
+import "./style.scss";
 
-export const Slide: FC<SliderProps> = ({ title }) => {
+const Slide: FC<SliderProps> = ({ title }) => {
   return (
     <div className="slide">
       <h4 className="slide__title">{title}</h4>
@@ -12,3 +13,5 @@ export const Slide: FC<SliderProps> = ({ title }) => {
     </div>
   );
 };
+
+export default Slide;

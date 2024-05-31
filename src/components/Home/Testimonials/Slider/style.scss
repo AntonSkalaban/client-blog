@@ -1,4 +1,3 @@
-@import 'assets/styles/mixins';
 @import 'assets/styles/colors';
 
 
@@ -22,32 +21,7 @@
 
     display: flex;
     gap: 24px;
-}
- 
-}
-
-.slide {
-    width: 469px;
-    height: 100%;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-   
-
-    padding-left: 96px;
-    padding-right: 32px;
-    
-    &__title {
-        color: $color-dark-blue;
-        
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-  
-  
+   }
 
     &__btn {
         width: 48px;

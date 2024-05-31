@@ -2,6 +2,8 @@ import { FC } from "react";
 
 import "./styled.scss";
 
-export const Overlay: FC = () => {
+const Overlay: FC = () => {
   return <section className="overlay" />;
 };
+
+export default Overlay;

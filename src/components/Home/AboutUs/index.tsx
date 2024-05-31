@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 
 import "./style.scss";
 
@@ -19,7 +19,7 @@ const AboutUs: FC = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua.
         </p>
-        <NavLink to="">Read More {">"}</NavLink>
+        <Link href={""}>Read More {">"}</Link>
       </div>
       <div className="about-us__block">
         <p className="cap">Our mision</p>

@@ -1,12 +1,14 @@
+"use client";
+
 import { FC, useRef, useState } from "react";
 
-import { useGetWidth } from "components/hooks";
+import { useGetWidth } from "hooks/index";
 
 import { slidesData } from "./constants";
-import { Slide } from "./Slide";
+import Slide from "./Slide";
 import "./style.scss";
 
-export const Slider: FC = () => {
+const Slider: FC = () => {
   const ref = useRef<null | HTMLDivElement>(null);
 
   const width = useGetWidth(ref);
@@ -32,13 +34,15 @@ export const Slider: FC = () => {
         ))}
       </div>
       <div className="slider__control-container">
-        <button className="slide__btn" onClick={hanldePrevClick} disabled={isFirstSlide}>
+        <button className="slider__btn" onClick={hanldePrevClick} disabled={isFirstSlide}>
           {"<"}
         </button>
-        <button className="slide__btn" onClick={hanldeNextClick} disabled={isLastSlide}>
+        <button className="slider__btn" onClick={hanldeNextClick} disabled={isLastSlide}>
           {">"}
         </button>
       </div>
     </div>
   );
 };
+
+export default Slider;

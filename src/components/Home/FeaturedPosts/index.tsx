@@ -1,12 +1,14 @@
+"use client";
+
 import { FC, useState } from "react";
 
-import { AllPosts } from "./AllPosts";
+import AllPosts from "./AllPosts";
 import { posts } from "./constants";
-import { FeaturePost } from "./FeaturePost";
+import FeaturePost from "./FeaturePost";
 import { Post } from "./types";
 import "./style.scss";
 
-export const FeaturePosts: FC = () => {
+const FeaturePosts: FC = () => {
   const [openPost, setOpenPost] = useState(posts[0]);
 
   const hanldeOpenPost = (post: Post) => {
@@ -28,3 +30,5 @@ export const FeaturePosts: FC = () => {
     </section>
   );
 };
+
+export default FeaturePosts;

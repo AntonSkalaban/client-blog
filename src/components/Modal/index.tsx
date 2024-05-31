@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { createPortal } from "react-dom";
 
-import { Overlay } from "components";
+import Overlay from "components/UI/Overlay";
 
 import { ModalProps } from "./types";
 import "./style.scss";

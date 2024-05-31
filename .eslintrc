@@ -46,7 +46,8 @@
       "error",
       {
         "groups": [
-          ["^react",
+          ["^react", 
+          "^next", 
         "^@hookform"
       ],
           [

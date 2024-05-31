@@ -1,10 +1,12 @@
+"use client";
+
 import { FC } from "react";
 
-import { AuthorAndDate } from "../AuthorAndDate";
+import AuthorAndDate from "../AuthorAndDate";
 import { FeaturePostProps } from "./types";
 import "./style.scss";
 
-export const FeaturePost: FC<FeaturePostProps> = ({ post }) => {
+const FeaturePost: FC<FeaturePostProps> = ({ post }) => {
   const { image, author, date, title, text } = post;
 
   return (
@@ -20,3 +22,5 @@ export const FeaturePost: FC<FeaturePostProps> = ({ post }) => {
     </div>
   );
 };
+
+export default FeaturePost;

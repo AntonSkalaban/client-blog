@@ -1,10 +1,11 @@
+"use client";
 import { FC, useState } from "react";
 
 import { Modal } from "components/Modal";
+import Wrapper from "components/UI/Wrapper";
 
-import { Wrapper } from "..";
-import { Nav } from "./Nav";
-import { Video } from "./Video";
+import Nav from "./Nav";
+import Video from "./Video";
 import "./style.scss";
 
 export const Header: FC = () => {

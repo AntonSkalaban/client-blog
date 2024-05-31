@@ -1,10 +1,10 @@
 import { FC } from "react";
 
-import { Wrapper } from "components";
+import Wrapper from "components/UI/Wrapper";
 
 import "./style.scss";
 
-export const StepByStep: FC = () => {
+const StepByStep: FC = () => {
   return (
     <section className="step-by-step">
       <Wrapper>
@@ -31,3 +31,5 @@ export const StepByStep: FC = () => {
     </section>
   );
 };
+
+export default StepByStep;

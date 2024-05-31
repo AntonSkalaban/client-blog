@@ -1,14 +1,15 @@
 import { FC } from "react";
+import Image from "next/image";
 
 import CloseUp from "assets/images/png/close-up.png";
 
 import "./style.scss";
 
-export const SpecialPost: FC = () => {
+const SpecialPost: FC = () => {
   return (
     <section className="special-post">
       <div className="special-post__img-container">
-        <img src={CloseUp}></img>
+        <Image src={CloseUp} alt="special-post-img" />
       </div>
       <div className="special-post__content">
         <p className="cap">Why we started</p>
@@ -25,3 +26,5 @@ export const SpecialPost: FC = () => {
     </section>
   );
 };
+
+export default SpecialPost;

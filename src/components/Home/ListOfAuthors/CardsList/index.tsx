@@ -1,9 +1,10 @@
 import { FC } from "react";
 
-import { AuthorCard } from "./AuthorCard";
+import AuthorCard from "./AuthorCard";
 import { authors } from "./constants";
 import "./style.scss";
-export const CardsList: FC = () => {
+
+const CardsList: FC = () => {
   return (
     <div className="authors-cards-list">
       {authors.map((card) => (
@@ -12,3 +13,5 @@ export const CardsList: FC = () => {
     </div>
   );
 };
+
+export default CardsList;

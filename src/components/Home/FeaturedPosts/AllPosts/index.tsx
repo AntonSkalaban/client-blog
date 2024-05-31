@@ -1,10 +1,10 @@
 import { FC } from "react";
 
-import { Post } from "./Post";
+import Post from "./Post";
 import { AllPostsProps } from "./types";
 import "./style.scss";
 
-export const AllPosts: FC<AllPostsProps> = ({ posts, activePostId, onClick }) => {
+const AllPosts: FC<AllPostsProps> = ({ posts, activePostId, onClick }) => {
   return (
     <section className="all-posts">
       {posts.map((post) => (
@@ -13,3 +13,5 @@ export const AllPosts: FC<AllPostsProps> = ({ posts, activePostId, onClick }) =>
     </section>
   );
 };
+
+export default AllPosts;

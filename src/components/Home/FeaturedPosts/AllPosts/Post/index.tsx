@@ -1,10 +1,10 @@
 import { FC } from "react";
 
-import { AuthorAndDate } from "../../AuthorAndDate";
+import AuthorAndDate from "../../AuthorAndDate";
 import { PostProps } from "./types";
 import "./style.scss";
 
-export const Post: FC<PostProps> = ({ post, activePostId, onClick }) => {
+const Post: FC<PostProps> = ({ post, activePostId, onClick }) => {
   const { id, author, date, title } = post;
   const isActive = activePostId === id;
 
@@ -20,3 +20,5 @@ export const Post: FC<PostProps> = ({ post, activePostId, onClick }) => {
     </article>
   );
 };
+
+export default Post;

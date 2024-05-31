@@ -1,10 +1,10 @@
 import { FC } from "react";
 
-import { CategoryCard } from "./CategoryCard";
+import CategoryCard from "./CategoryCard";
 import { categories } from "./constants";
 import "./style.scss";
 
-export const CategoryCards: FC = () => {
+const CategoryCards: FC = () => {
   return (
     <div className="category-cards">
       {categories.map(({ image, title, text }) => {
@@ -13,3 +13,5 @@ export const CategoryCards: FC = () => {
     </div>
   );
 };
+
+export default CategoryCards;

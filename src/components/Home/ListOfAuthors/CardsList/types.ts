@@ -1,7 +1,9 @@
+import { StaticImageData } from "next/image";
+
 export interface Author {
   id: number;
   name: string;
-  image: string;
+  image: StaticImageData;
   profession: string;
   company: string;
   contacts: {
