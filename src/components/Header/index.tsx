@@ -1,11 +1,11 @@
 "use client";
 import { FC, useState } from "react";
 
-import { Modal } from "components/Modal";
-import Wrapper from "components/UI/Wrapper";
+import { Modal, Wrapper } from "components";
 
-import Nav from "./Nav";
-import Video from "./Video";
+import { LangSwitcher } from "./LangSwitcher";
+import { Nav } from "./Nav";
+import { Video } from "./Video";
 import "./style.scss";
 
 export const Header: FC = () => {
@@ -30,6 +30,7 @@ export const Header: FC = () => {
             <button className="header__button" onClick={hanldeOpenModal}>
               Video about us
             </button>
+            <LangSwitcher />
           </div>
         </div>
       </Wrapper>

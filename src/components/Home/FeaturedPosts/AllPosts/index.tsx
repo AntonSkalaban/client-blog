@@ -4,7 +4,7 @@ import Post from "./Post";
 import { AllPostsProps } from "./types";
 import "./style.scss";
 
-const AllPosts: FC<AllPostsProps> = ({ posts, activePostId, onClick }) => {
+export const AllPosts: FC<AllPostsProps> = ({ posts, activePostId, onClick }) => {
   return (
     <section className="all-posts">
       {posts.map((post) => (
@@ -13,5 +13,3 @@ const AllPosts: FC<AllPostsProps> = ({ posts, activePostId, onClick }) => {
     </section>
   );
 };
-
-export default AllPosts;

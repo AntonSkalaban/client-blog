@@ -1,19 +1,6 @@
 @import 'assets/styles/colors';
+@import 'assets/styles/mixins';
 
-
-@mixin buttonMixin {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-style: normal;
-    font-weight: 700;
-    padding: 16px 48px;
-    cursor: pointer;
-
-    &:hover {
-        opacity: 0.8;
-    }
-}
 
 .header {
     height: 80px;
@@ -26,30 +13,35 @@
 
     &__container {
         height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flexBetween;
     }
+
     &__title {
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
         line-height: 48px;
     }
+
     &__menu-container {
-        display: flex;
+        @include flexBetween;
         gap: 32px;
     }
+
     &__button {
-        @include buttonMixin;
-        box-sizing: border-box;
-        height: 24px;
-       
+        @include flexCenter;
+        background-color: $color-white;
+    
+        font-weight: 700;
         font-size: 18px;
         line-height: 24px;
+        color: $color-dark-blue;
 
-        color: #232536;
-       
+        padding: 16px 48px;
+    
+        &:hover {
+            opacity: 0.8;
+        }   
     }
 }
 

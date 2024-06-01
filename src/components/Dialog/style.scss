@@ -1,0 +1,37 @@
+@import 'assets/styles/colors';
+@import 'assets/styles/mixins';
+
+
+.dialog {
+    position:absolute;
+    z-index: 300;
+    top: calc(100% + 10px);
+    right: 0;
+    min-width: 50px;
+    width: fit-content;
+    height:fit-content;
+
+    border: 2px solid $color-yellow;
+    border-radius:5px; 
+
+    background-color: $color-white;
+
+    padding: 5px;
+
+    &__triangle{
+        position:absolute;
+        top:-20px;
+        left:30px;
+        width:0;
+        height:0;
+        border-width:10px;
+        border-style:solid;
+        border-color:transparent transparent $color-white transparent; 
+      }
+
+    &__triangle_border{
+        top:-18px;
+        border-color:transparent transparent $color-white transparent; 
+      }
+
+}

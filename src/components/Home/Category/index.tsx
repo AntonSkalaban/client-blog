@@ -1,16 +1,17 @@
 import { FC } from "react";
+import { useTranslations } from "next-intl";
 
 import CategoryCards from "components/CategoryCards";
 
 import "./style.scss";
 
-const Category: FC = () => {
+export const Category: FC = () => {
+  const t = useTranslations("home.category");
+
   return (
     <section className="category">
-      <h2 className="category__title">Choose A Catagory</h2>
+      <h2 className="category__title">{t("title")}</h2>
       <CategoryCards />
     </section>
   );
 };
-
-export default Category;

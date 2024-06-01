@@ -1,0 +1,56 @@
+{
+    "home": {
+        "stepByStep": {
+            "cap": {
+                "main": "Posted on", "span": "startup"
+            },
+            "title": "Step-by-step guide to choosing great font pairs",
+            "info": {
+                "start": "By",
+                "name": "James West",
+                "date": "May 23 2022 г."
+            },
+            "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+            "button": "Read More"
+        },
+        "featurePosts": {
+            "featurePost": {
+                "title": "Featured Post",
+                "button": "Read More"
+            },
+            "allPosts": {
+                "title": "All posts"
+            }
+        },
+        "aboutUs": {
+            "aboutUs": {
+                "cap": "About us",
+                "title": "We are a community of content writers who share their learnings",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "link": "Read More"
+            },
+            "ourMision": {
+                "cap": "Our mision",
+                "title": "Creating valuable content for creatives all around the world",
+                "text": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            } 
+        },
+        "category": {
+            "title":"Choose A Catagory"
+        },
+        "specialPost": {
+            "cap": "Why we started",
+            "title": "It started out as a simple idea and evolved into our passion",
+            "text": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+            "button": "Discover our story"
+        },
+        "listOfAuthors": {
+            "title:": "List of Authors"
+        },
+        "testimonials": {
+            "cap": "testimonials",
+            "title": "What people say about our blog",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+        }
+    }
+}

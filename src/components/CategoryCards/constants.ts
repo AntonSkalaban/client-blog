@@ -8,22 +8,46 @@ import { Category } from "./types";
 export const categories: Category[] = [
   {
     image: Business,
-    title: "Business",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    title: {
+      en: "Business",
+      ru: "Бизнес",
+    },
+    text: {
+      en: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+      ru: "Лорем ипсум долор сит амет, консектетур адиписцинг элит.",
+    },
   },
   {
     image: Startup,
-    title: "Startup",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    title: {
+      en: "Startup",
+      ru: "Стартап",
+    },
+    text: {
+      en: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+      ru: "Лорем ипсум долор сит амет, консектетур адиписцинг элит.",
+    },
   },
   {
     image: Economy,
-    title: "Economy",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    title: {
+      en: "Economy",
+      ru: "Экономика",
+    },
+    text: {
+      en: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+      ru: "Лорем ипсум долор сит амет, консектетур адиписцинг элит.",
+    },
   },
   {
     image: Technology,
-    title: "Technology",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    title: {
+      en: "Technology",
+      ru: "Технологии",
+    },
+    text: {
+      en: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+      ru: "Лорем ипсум долор сит амет, консектетур адиписцинг элит.",
+    },
   },
 ];

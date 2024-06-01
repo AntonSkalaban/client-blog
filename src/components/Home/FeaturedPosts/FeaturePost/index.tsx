@@ -1,12 +1,15 @@
 "use client";
 
 import { FC } from "react";
+import { useTranslations } from "next-intl";
 
 import AuthorAndDate from "../AuthorAndDate";
 import { FeaturePostProps } from "./types";
 import "./style.scss";
 
 const FeaturePost: FC<FeaturePostProps> = ({ post }) => {
+  const t = useTranslations("home.featurePosts");
+
   const { image, author, date, title, text } = post;
 
   return (
@@ -18,7 +21,10 @@ const FeaturePost: FC<FeaturePostProps> = ({ post }) => {
       <AuthorAndDate author={author} date={date} />
       <h3 className="feature-post__title">{title}</h3>
       <p className="text-big feature-post__text">{text}</p>
-      <button className="button-yellow">Read More {">"}</button>
+      <button className="button-yellow">
+        {t("featurePost.button")}
+        {">"}
+      </button>
     </div>
   );
 };

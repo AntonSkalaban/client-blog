@@ -1,13 +1,11 @@
 @font-face {
     font-family: 'Inter';
-  
     font-weight: 900;
     src: url(../fonts/Inter/Inter-ExtraBold.ttf) format('ttf');
 }
 
 @font-face {
     font-family: 'Inter';
-  
     font-weight: 700;
     src: url(../fonts/Inter/Inter-Bold.ttf) format('ttf');
 }
@@ -24,11 +22,11 @@
     src: url(../fonts/Inter/Inter-Regular.ttf) format('ttf');
 }
 
-@font-face {
-    font-family: 'Sen';
-    font-weight: 700;
-    src: url(../fonts/Sen/Sen-Bold.ttf) format('ttf');
-}
+// @font-face {
+//     font-family: 'Sen';
+//     font-weight: 700;
+//     src: url(../fonts/Sen/Sen-Bold.ttf) format('ttf');
+// }
 
 $font-infer: 'Inter', sans-serif;
 

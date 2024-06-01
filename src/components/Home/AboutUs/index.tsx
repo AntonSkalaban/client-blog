@@ -1,9 +1,12 @@
 import { FC } from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 import "./style.scss";
 
-const AboutUs: FC = () => {
+export const AboutUs: FC = () => {
+  const t = useTranslations("home.aboutUs");
+
   return (
     <section className="about-us">
       <div className="about-us__decor-line">
@@ -11,29 +14,19 @@ const AboutUs: FC = () => {
       </div>
 
       <div className="about-us__block">
-        <p className="cap about-us__cap">ABOUT US</p>
-        <h2 className="about-us__title">
-          We are a community of content writers who share their learnings
-        </h2>
-        <p className="text-big about-us__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua.
-        </p>
-        <Link href={""}>Read More {">"}</Link>
+        <p className="cap about-us__cap">{t("aboutUs.cap")}</p>
+        <h2 className="about-us__title">{t("aboutUs.title")}</h2>
+        <p className="text-big about-us__text">{t("aboutUs.text")}</p>
+        <Link href={""}>
+          {t("aboutUs.link")} {">"}
+        </Link>
       </div>
+
       <div className="about-us__block">
-        <p className="cap">Our mision</p>
-        <h3 className="about-us__title">
-          Creating valuable content for creatives all around the world
-        </h3>
-        <p className="text-big about-us__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+        <p className="cap">{t("ourMision.cap")}</p>
+        <h3 className="about-us__title">{t("ourMision.title")}</h3>
+        <p className="text-big about-us__text">{t("ourMision.text")}</p>
       </div>
     </section>
   );
 };
-
-export default AboutUs;

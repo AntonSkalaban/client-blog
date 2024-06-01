@@ -40,12 +40,8 @@
        
     }
 
-    &__subtitle {
-       text-transform: uppercase;
-       
-        &_bold {
-            font-weight: 900; 
-        }
+    &__cap_bold {
+        font-weight: 900; 
     }
 
     &__title {

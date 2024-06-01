@@ -11,10 +11,7 @@ const pages = [
   { name: "Contac Us", path: "3" },
 ];
 
-const Nav: FC = () => {
-  // const setActive = ({ isActive }: { isActive: boolean }) => {
-  //   return ;
-  // };
+export const Nav: FC = () => {
   const pathname = usePathname();
 
   return (
@@ -34,5 +31,3 @@ const Nav: FC = () => {
     </nav>
   );
 };
-
-export default Nav;
