@@ -51,6 +51,11 @@
             "cap": "отзывы",
             "title": "Что говорят о нашем блоге",
             "text": "Орем ипсум долор сит амет, консектетур адиписцинг элит, сед до эиусмод темпор."
+        },
+        "joinOurTeam": {
+            "title": "Присоединяйтесь к нашей команде, чтобы стать частью нашей истории",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+            "button": "Присоединиться сейчас"
         }
     }
 }

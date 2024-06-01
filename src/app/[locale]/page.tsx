@@ -4,6 +4,7 @@ import {
   AboutUs,
   Category,
   FeaturePosts,
+  JoinOurTeam,
   ListOfAuthors,
   SpecialPost,
   StepByStep,
@@ -22,6 +23,7 @@ const Home: FC = () => {
         <SpecialPost />
         <ListOfAuthors />
         <Testimonials />
+        <JoinOurTeam />
       </Wrapper>
     </>
   );

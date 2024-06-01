@@ -1,0 +1,24 @@
+@import 'assets/styles/colors';
+@import 'assets/styles/mixins';
+
+.join-our-team {
+
+
+    width: 414px;
+
+    @include flexCenter;
+    flex-direction: column;
+    margin: 128px auto 0 auto;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__text {
+        text-align: center;
+        color: $color-grey;
+
+        margin-top: 16px;
+        margin-bottom: 32px;
+    }
+}

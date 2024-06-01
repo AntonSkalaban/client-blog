@@ -51,6 +51,11 @@
             "cap": "testimonials",
             "title": "What people say about our blog",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+        },
+        "joinOurTeam": {
+            "title":"Join our team to be a part of our story",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+            "button": "Join Now"
         }
     }
 }
