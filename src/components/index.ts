@@ -5,3 +5,4 @@ export * from "./UI";
 export * from "./Modal";
 export * from "./Nav";
 export * from "./Footer";
+export * from "./JoinOurTeam";

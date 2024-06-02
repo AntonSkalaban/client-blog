@@ -1,8 +1,8 @@
 import { FC, useState } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
 
-import { Dialog } from "components/Dialog";
+import { Dialog } from "components";
 import { locales } from "constants/index";
 import Globe from "assets/images/svg/globe.svg";
 
@@ -10,13 +10,14 @@ import "./style.scss";
 
 export const LangSwitcher: FC = () => {
   const router = useRouter();
+  const pathname = usePathname();
   const localActive = useLocale() as "ru" | "en";
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => setIsOpen((prev) => !prev);
 
   const handleLangClick = (lang: string) => () => {
-    router.replace(`/${lang}`);
+    router.replace(pathname.replace(localActive, lang));
   };
 
   return (

@@ -4,17 +4,12 @@ import { FC } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { pages } from "./constants";
 import "./style.scss";
 
-const pages = [
-  { name: "Main", path: "" },
-  { name: "Blog", path: "1" },
-  { name: "About Us", path: "2" },
-  { name: "Contac Us", path: "3" },
-];
-
 export const Nav: FC = () => {
-  const pathname = usePathname().split("")[0];
+  const pathname = usePathname();
+  const pagename = pathname.split("/").filter((i) => i !== "")[1] || "";
 
   return (
     <nav className="nav">
@@ -22,8 +17,8 @@ export const Nav: FC = () => {
         return (
           <div className="nav__item" key={path}>
             <Link
-              className={"nav__link " + (pathname === "/" + path ? "nav__link_active" : "")}
-              href={path}
+              className={"nav__link " + (pagename === path ? "nav__link_active" : "")}
+              href={"/" + path}
             >
               {name}
             </Link>
