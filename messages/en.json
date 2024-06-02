@@ -1,4 +1,11 @@
 {
+    "footer": {
+        "subscribe": {
+            "title": "Subscribe to our news letter to get latest updates and news",
+            "emael": "Enter Your Email",
+            "button": "Subscribe"
+        }
+    }, 
     "home": {
         "stepByStep": {
             "cap": {

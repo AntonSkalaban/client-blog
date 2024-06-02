@@ -12,7 +12,7 @@ export const metadata = {
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
-import { Header } from "components";
+import { Footer, Header } from "components";
 
 const sen = Sen({ subsets: ["latin"] });
 
@@ -31,6 +31,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <Header />
           <main>{children}</main>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

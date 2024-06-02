@@ -1,10 +1,9 @@
 "use client";
 import { FC, useState } from "react";
 
-import { Modal, Wrapper } from "components";
+import { Modal, Nav, Wrapper } from "components";
 
 import { LangSwitcher } from "./LangSwitcher";
-import { Nav } from "./Nav";
 import { Video } from "./Video";
 import "./style.scss";
 
@@ -24,7 +23,7 @@ export const Header: FC = () => {
 
       <Wrapper>
         <div className="header__container">
-          <h1 className="header__title">Modsen Client Blog</h1>
+          <h1 className="logo">Modsen Client Blog</h1>
           <div className="header__menu-container">
             <Nav />
             <button className="header__button" onClick={hanldeOpenModal}>

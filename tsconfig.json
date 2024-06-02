@@ -72,6 +72,7 @@
     "./src",
     "./dist/types/**/*.ts",
     "./next-env.d.ts",
+    "./svg.d.ts",
     ".next/types/**/*.ts"
   ],
   "exclude": [

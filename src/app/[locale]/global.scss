@@ -1,9 +1,15 @@
 @import 'assets/styles/colors';
+@import 'assets/styles/fonts';
 @import 'assets/styles/mixins';
 
 body {
     font-style: normal;
     box-sizing: border-box;
+}
+
+header, footer {
+    background-color: $color-dark-blue;
+    color: $color-white;
 }
 
 button {
@@ -92,6 +98,7 @@ p {
 }
 
 .cap {
+    font-family: $font-inter;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
@@ -107,4 +114,12 @@ p {
     &:hover {
         background-color: $color-yellow-dark;
     }
+}
+
+.logo {
+    font-family: $font-inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 48px;  
 }

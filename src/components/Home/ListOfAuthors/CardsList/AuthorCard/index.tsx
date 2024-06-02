@@ -1,9 +1,8 @@
 import { FC } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
-import { Author } from "../types";
-import { mediaIcons } from "./constants";
+import { MediaList } from "components";
+
 import { AuthorCardProps } from "./types";
 import "./style.scss";
 
@@ -21,13 +20,7 @@ const AuthorCard: FC<AuthorCardProps> = ({ card }) => {
         </p>
       </div>
 
-      <div className="author-card__media-container">
-        {Object.entries(mediaIcons).map(([key, icon]) => (
-          <Link key={key} href={contacts[key as keyof Author["contacts"]]}>
-            <Image className="author-card__icon" src={icon} alt="media-icon" />
-          </Link>
-        ))}
-      </div>
+      <MediaList links={contacts} />
     </div>
   );
 };

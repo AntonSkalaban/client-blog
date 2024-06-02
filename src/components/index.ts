@@ -3,3 +3,5 @@ export * from "./Home";
 export * from "./Dialog";
 export * from "./UI";
 export * from "./Modal";
+export * from "./Nav";
+export * from "./Footer";

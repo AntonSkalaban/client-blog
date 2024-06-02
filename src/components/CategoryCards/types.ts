@@ -1,9 +1,11 @@
+import { ReactElement } from "react";
+
 export interface Language {
   ru: string;
   en: string;
 }
 export interface Category {
-  image: string;
+  image: ReactElement;
   title: Language;
   text: Language;
 }

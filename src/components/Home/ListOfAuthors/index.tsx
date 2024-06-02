@@ -9,7 +9,7 @@ export const ListOfAuthors: FC = () => {
 
   return (
     <section className="list-of-authors">
-      <h2 className="list-of-authors__title"> {t("title")}</h2>
+      <h2 className="list-of-authors__title">{t("title")}</h2>
       <CardsList />
     </section>
   );

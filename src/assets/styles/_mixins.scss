@@ -1,9 +1,6 @@
 @import './colors';
 
 @mixin buttonMixin {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-style: normal;
     font-weight: 700;
     padding: 16px 48px;
@@ -22,6 +19,10 @@
 
 @mixin borderGrey {
     border: 1px solid $color-grey-light;
+}
+
+@mixin borderGreyDark {
+    border: 1px solid $color-grey;
 }
 
 @mixin flexCenter {

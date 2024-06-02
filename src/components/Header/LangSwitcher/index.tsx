@@ -1,5 +1,4 @@
 import { FC, useState } from "react";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
 
@@ -23,7 +22,7 @@ export const LangSwitcher: FC = () => {
   return (
     <div className="lang-switcher">
       <button className="lang-switcher__btn" onClick={handleToggle}>
-        <Image className="lang-switcher__icon" src={Globe} alt="glob" />
+        <Globe />
         <p>{localActive.toLocaleUpperCase()}</p>
       </button>
       {isOpen && (

@@ -1,0 +1,36 @@
+@import 'assets/styles/colors';
+@import 'assets/styles/mixins';
+
+.subscribe {
+    width: 100%;
+    height: 256px;
+    background-color: $color-light-blue;
+  
+
+    @include flexCenter;
+    gap: 64px;
+
+    &__title {
+        width: 562px;
+        color: $color-white;
+    }
+
+    &__form {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__email {
+        width: 300px;
+        height: 56px;
+
+        background-color: transparent;
+        @include borderGreyDark;
+
+        padding-left: 24px;
+
+        color: $color-white;
+        outline: none;
+    }
+}
+

@@ -1,11 +1,9 @@
 @import 'assets/styles/colors';
 @import 'assets/styles/mixins';
-
+@import 'assets/styles/fonts';
 
 .header {
     height: 80px;
-    background-color:  $color-dark-blue;
-    color: $color-white;
 
     display: flex;
   
@@ -14,13 +12,6 @@
     &__container {
         height: 100%;
         @include flexBetween;
-    }
-
-    &__title {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 48px;
     }
 
     &__menu-container {
@@ -32,6 +23,7 @@
         @include flexCenter;
         background-color: $color-white;
     
+        font-family: $font-inter;
         font-weight: 700;
         font-size: 18px;
         line-height: 24px;

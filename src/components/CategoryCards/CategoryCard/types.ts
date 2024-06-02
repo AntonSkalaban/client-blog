@@ -1,5 +1,7 @@
+import { ReactElement } from "react";
+
 export interface CategoryCardProps {
-  image: string;
+  image: ReactElement;
   title: string;
   text: string;
 }

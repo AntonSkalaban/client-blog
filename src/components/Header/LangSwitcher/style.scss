@@ -10,17 +10,19 @@
        flex-direction: column;
         gap: 8px;
         color: $color-white;
-       &:hover {
-        
-        color: $color-yellow;
-       }
-    }
 
-    &__icon {
-        width: 32px;
-        height: 32px;
-        fill:  $color-yellow;
-        stroke: $color-yellow;
+        svg {
+            width: 32px;
+            height: 32px;
+        }
+
+       &:hover {
+        color: $color-yellow;
+
+        svg {
+            stroke: $color-yellow;
+        }
+       }
     }
 
     &__text {
@@ -34,5 +36,4 @@
             color: $color-white;
         }
     }
-   
 }
