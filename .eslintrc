@@ -48,7 +48,9 @@
         "groups": [
           ["^react", 
           "^next", 
-        "^@hookform"
+          "yup",
+        "^@hookform",
+        "^@emailjs"
       ],
           [
            "^@?\\w",

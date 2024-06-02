@@ -2,7 +2,7 @@
     "footer": {
         "subscribe": {
             "title": "Subscribe to our news letter to get latest updates and news",
-            "emael": "Enter Your Email",
+            "email": "Enter Your Email",
             "button": "Subscribe"
         }
     }, 
@@ -52,7 +52,7 @@
             "button": "Discover our story"
         },
         "listOfAuthors": {
-            "title:": "List of Authors"
+            "title": "List of Authors"
         },
         "testimonials": {
             "cap": "testimonials",
