@@ -1,19 +1,22 @@
 import { notFound } from "next/navigation";
+import { useLocale } from "next-intl";
 
-import { JoinOurTeam } from "components/JoinOurTeam";
-import { Wrapper } from "components/UI";
-import { blogBosts } from "constants/blogPosts";
+import { BlogPostHeader, JoinOurTeam, PostDescription, PostImage, Wrapper } from "components";
+import { blogBosts } from "constants/index";
 
 export default function BlogPost({ params }: { params: { id: string } }) {
-    // const locale = 
-  const post = blogBosts.find(({ id }) => +id === +id);
+  const localActive = useLocale() as "ru" | "en";
+
+  const post = blogBosts.find((post) => post.id === +params.id);
 
   if (!post) return notFound();
-//   dangerouslySetInnerHTML={{ __html: post.description }}
+
   return (
     <>
+      <BlogPostHeader title={post.title[localActive]} category={post.category[localActive]} />
+      <PostImage img={post.img} />
       <Wrapper>
-        <section ></section>
+        <PostDescription description={post.description[localActive]} />
         <JoinOurTeam />
       </Wrapper>
     </>

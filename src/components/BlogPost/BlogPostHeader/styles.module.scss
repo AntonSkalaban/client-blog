@@ -1,0 +1,14 @@
+.blog-post-header {
+    width: 768px;
+    margin: 24px auto 0 auto;
+
+    &__title {
+        margin-top: 24px;
+    }
+    &__category {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 34px;
+    }
+}

@@ -1,6 +1,7 @@
 export * from "./Header";
 export * from "./Home";
 export * from "./Blog";
+export * from "./BlogPost";
 export * from "./Dialog";
 export * from "./UI";
 export * from "./Modal";

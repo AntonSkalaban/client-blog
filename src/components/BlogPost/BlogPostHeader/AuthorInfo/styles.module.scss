@@ -1,0 +1,21 @@
+@import 'assets/styles/colors';
+
+.author-info {
+    display: flex;
+    gap: 16px;
+
+    &__img-container {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        margin-top: 2px;
+    }
+
+    &__title {
+        color: $color-purple;
+    }
+
+    &__text {
+        color: $color-grey;
+    }
+}

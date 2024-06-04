@@ -1,8 +1,9 @@
 import { FC } from "react";
 import { useLocale } from "next-intl";
 
+import { categories } from "constants/index";
+
 import { CategoryCard } from "./CategoryCard";
-import { categories } from "./constants";
 import "./style.scss";
 
 export const CategoryCards: FC = () => {
