@@ -1,8 +1,8 @@
 import { FC } from "react";
 
 import AuthorAndDate from "../../AuthorAndDate";
+import styles from "./styles.module.scss";
 import { PostProps } from "./types";
-import "./style.scss";
 
 const Post: FC<PostProps> = ({ post, activePostId, onClick }) => {
   const { id, author, date, title } = post;
@@ -11,8 +11,11 @@ const Post: FC<PostProps> = ({ post, activePostId, onClick }) => {
   const hanldeClick = () => onClick(post);
 
   return (
-    <article className={`post ${isActive ? "post_active" : ""}`} onClick={hanldeClick}>
-      <div className="post__content">
+    <article
+      className={`${styles.post} ${isActive ? styles.post_active : ""}`}
+      onClick={hanldeClick}
+    >
+      <div className={styles.post__content}>
         <AuthorAndDate author={author} date={date} />
 
         <h4>{title}</h4>

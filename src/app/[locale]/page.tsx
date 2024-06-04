@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import {
   AboutUs,
-  Category,
+  ChooseCategory,
   FeaturePosts,
   JoinOurTeam,
   ListOfAuthors,
@@ -19,7 +19,7 @@ const Home: FC = () => {
       <Wrapper>
         <FeaturePosts />
         <AboutUs />
-        <Category />
+        <ChooseCategory />
         <SpecialPost />
         <ListOfAuthors />
         <Testimonials />

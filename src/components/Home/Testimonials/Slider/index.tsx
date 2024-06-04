@@ -1,34 +1,31 @@
 "use client";
 
-import { FC, useRef, useState } from "react";
+import { FC } from "react";
 
-import { useGetWidth } from "hooks/index";
+import { useSlider } from "hooks";
 
 import { slidesData } from "./constants";
 import Slide from "./Slide";
 import "./style.scss";
 
 const Slider: FC = () => {
-  const ref = useRef<null | HTMLDivElement>(null);
-
-  const width = useGetWidth(ref);
-
-  const [slidesStyle, setSlideStyle] = useState(0);
-
-  const isFirstSlide = slidesStyle === 0;
-  const isLastSlide = slidesData.length * width - width === slidesStyle * -1;
+  const { sliderRef, openSlideStyle, toNextSlide, toPrevSlide, isFirstSlide, isLastSlide } =
+    useSlider(slidesData.length);
 
   const hanldePrevClick = () => {
-    setSlideStyle((prev) => prev + width);
+    toPrevSlide();
   };
 
   const hanldeNextClick = () => {
-    setSlideStyle((prev) => prev - width);
+    toNextSlide();
   };
 
   return (
-    <div className="slider" ref={ref}>
-      <div className="slider__slides-wrapper" style={{ transform: `translate(${slidesStyle}px)` }}>
+    <div className="slider" ref={sliderRef}>
+      <div
+        className="slider__slides-wrapper"
+        style={{ transform: `translate(${openSlideStyle}px)` }}
+      >
         {slidesData.map(({ id, title }) => (
           <Slide key={id} title={title} />
         ))}

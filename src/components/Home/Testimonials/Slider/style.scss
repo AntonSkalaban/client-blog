@@ -1,17 +1,15 @@
 @import 'assets/styles/colors';
+@import 'assets/styles/mixins';
 
 
 .slider {
     width: 597px;
     height: 320px;
-    position: relative;
-    overflow: hidden;
+    @include slider;
 
    &__slides-wrapper {
     height: 100%;
-    display: flex;
-    position: absolute;
-    transition: all ease-in-out 1s;
+    @include sledersWrapper;
    }
 
    &__control-container {

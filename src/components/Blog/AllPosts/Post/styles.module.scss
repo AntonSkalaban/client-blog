@@ -1,0 +1,33 @@
+@import 'assets/styles/colors';
+
+.post {
+    display: flex;
+    gap: 32px;
+
+    margin-top: 64px;
+
+    &__img-container {
+        width: 490px;
+        height: 318px;
+    }
+
+    &__text-container {
+        width: 490px;
+        height: 318px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__cap {
+        color: $color-purple;
+    }
+
+    &__title {
+        margin-top: 20px;
+    }
+
+    &__text {
+        margin-top: 16px;
+    }
+}

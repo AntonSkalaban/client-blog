@@ -36,3 +36,14 @@
     align-items: center;
     justify-content: space-between;
 }
+
+@mixin slider {
+    position: relative;
+    overflow: hidden;
+}
+
+@mixin sledersWrapper {
+    display: flex;
+    position: absolute;
+    transition: all ease-in-out 1s;
+}

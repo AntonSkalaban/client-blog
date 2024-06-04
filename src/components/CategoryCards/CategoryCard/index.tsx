@@ -3,7 +3,7 @@ import { FC } from "react";
 import { CategoryCardProps } from "./types";
 import "./style.scss";
 
-const CategoryCard: FC<CategoryCardProps> = ({ image, title, text }) => {
+export const CategoryCard: FC<CategoryCardProps> = ({ image, title, text }) => {
   return (
     <div className="category-card">
       <div className="category-card__icon-container">{image}</div>
@@ -12,5 +12,3 @@ const CategoryCard: FC<CategoryCardProps> = ({ image, title, text }) => {
     </div>
   );
 };
-
-export default CategoryCard;

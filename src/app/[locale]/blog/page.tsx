@@ -1,11 +1,14 @@
 import { FC } from "react";
 
-import { JoinOurTeam, Wrapper } from "components";
+import { AllCategories, AllPosts, BlogStepByStep, JoinOurTeam, Wrapper } from "components";
 
 const Blog: FC = () => {
   return (
     <>
+      <BlogStepByStep />
       <Wrapper>
+        <AllPosts />
+        <AllCategories />
         <JoinOurTeam />
       </Wrapper>
     </>

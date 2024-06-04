@@ -1,5 +1,5 @@
 export * from "./AboutUs";
-export * from "./Category";
+export * from "./ChooseCategory";
 export * from "./FeaturedPosts";
 export * from "./ListOfAuthors";
 export * from "./SpecialPost";

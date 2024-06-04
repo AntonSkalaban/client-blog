@@ -1,0 +1,43 @@
+@import 'assets/styles/colors';
+@import 'assets/styles/mixins';
+
+
+.blog-step-by-step {
+    height: 519px;
+
+    background-color: $color-light-pink;
+
+    &__container {
+        height: 100%;
+        @include flexBetween;
+    }
+
+    &__text-container {
+        width: 624px;
+       
+    }
+
+    &__cap {
+        color: $color-dark-blue;
+    }
+
+    &__title {
+        color: $color-dark-blue;
+        margin-top: 20px;
+    }
+
+    &__label {
+        margin-top: 16px;
+    }
+
+    &__text {
+        color: $color-grey;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    &__img-container {
+        width: 515px;
+        height: 359px;
+    }
+}

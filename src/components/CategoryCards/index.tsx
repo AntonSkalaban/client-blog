@@ -1,11 +1,11 @@
 import { FC } from "react";
 import { useLocale } from "next-intl";
 
-import CategoryCard from "./CategoryCard";
+import { CategoryCard } from "./CategoryCard";
 import { categories } from "./constants";
 import "./style.scss";
 
-const CategoryCards: FC = () => {
+export const CategoryCards: FC = () => {
   const localActive = useLocale() as "ru" | "en";
 
   return (
@@ -23,5 +23,3 @@ const CategoryCards: FC = () => {
     </div>
   );
 };
-
-export default CategoryCards;

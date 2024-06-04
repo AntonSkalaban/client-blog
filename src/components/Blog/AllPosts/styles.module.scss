@@ -1,0 +1,44 @@
+@import 'assets/styles/colors';
+@import 'assets/styles/mixins';
+
+
+.all-posts {
+    margin-top: 64px;
+  
+
+    &__title {
+        color: $color-dark-blue;
+        padding-bottom: 32px;
+        border-bottom: 1px solid $color-grey;
+    }
+}
+
+.slider {
+    width: 1012px;
+    height: 1846px;
+    @include slider;
+
+    &__sliders-wrapper {
+        @include sledersWrapper;
+    }
+
+    &__slide {
+        // width: 100%;
+    }
+}
+
+
+
+.controls {
+    @include flexCenter;
+
+    margin-top: 64px;
+    gap: 17px;
+
+    &__btn {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -1px;
+    }
+}

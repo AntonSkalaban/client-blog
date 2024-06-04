@@ -64,5 +64,18 @@
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
             "button": "Join Now"
         }
+    },
+    "blog": {
+        "stepByStep": {
+            "cap": "Featured Post",
+            "title": "Step-by-step guide to choosing great font pairs",
+            "info": {
+                "start": "By",
+                "name": "James West",
+                "date": "May 23 2022 г."
+            },
+            "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+            "button": "Read More"
+        }
     }
 }
