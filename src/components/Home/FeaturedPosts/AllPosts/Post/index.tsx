@@ -1,8 +1,8 @@
 import { FC } from "react";
 
 import AuthorAndDate from "../../AuthorAndDate";
-import styles from "./styles.module.scss";
 import { PostProps } from "./types";
+import styles from "./styles.module.scss";
 
 const Post: FC<PostProps> = ({ post, activePostId, onClick }) => {
   const { id, author, date, title } = post;

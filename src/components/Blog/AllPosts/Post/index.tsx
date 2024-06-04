@@ -2,8 +2,8 @@ import { FC } from "react";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 
-import styles from "./styles.module.scss";
 import { PostProps } from "./types";
+import styles from "./styles.module.scss";
 
 export const Post: FC<PostProps> = ({ post }) => {
   const localActive = useLocale() as "ru" | "en";
