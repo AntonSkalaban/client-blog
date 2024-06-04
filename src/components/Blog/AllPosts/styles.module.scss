@@ -15,16 +15,14 @@
 
 .slider {
     width: 1012px;
-    height: 1846px;
+    height: 1900px;
     @include slider;
 
     &__sliders-wrapper {
         @include sledersWrapper;
     }
 
-    &__slide {
-        // width: 100%;
-    }
+
 }
 
 

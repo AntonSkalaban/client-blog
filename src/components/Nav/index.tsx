@@ -1,15 +1,13 @@
 "use client";
 
 import { FC } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 
+import { Link, usePathname } from "../../navigation";
 import { pages } from "./constants";
 import "./style.scss";
 
 export const Nav: FC = () => {
-  const pathname = usePathname();
-  const pagename = pathname.split("/").filter((i) => i !== "")[1] || "";
+  const pathname = usePathname().split("/")[1];
 
   return (
     <nav className="nav">
@@ -17,7 +15,7 @@ export const Nav: FC = () => {
         return (
           <div className="nav__item" key={path}>
             <Link
-              className={"nav__link " + (pagename === path ? "nav__link_active" : "")}
+              className={"nav__link " + (pathname === path ? "nav__link_active" : "")}
               href={"/" + path}
             >
               {name}

@@ -2,15 +2,15 @@
 import { FC, useMemo } from "react";
 
 import { useSlider } from "hooks";
+import { blogBosts } from "constants/index";
 import { chunkArray } from "utils";
+import { BlogPost } from "types";
 
-import { posts } from "./constants";
 import { Post } from "./Post";
-import { BlogPost } from "./types";
 import styles from "./styles.module.scss";
 
 export const AllPosts: FC = () => {
-  const chunkedArray = useMemo(() => chunkArray<BlogPost>(posts), []);
+  const chunkedArray = useMemo(() => chunkArray<BlogPost>(blogBosts), []);
 
   const { sliderRef, openSlideStyle, isFirstSlide, isLastSlide, toNextSlide, toPrevSlide } =
     useSlider(chunkedArray.length);

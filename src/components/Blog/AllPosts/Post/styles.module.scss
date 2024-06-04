@@ -6,9 +6,18 @@
 
     margin-top: 64px;
 
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-grey-light;
+        img {
+            scale: 1.1;
+        }
+    }
     &__img-container {
         width: 490px;
         height: 318px;
+        overflow: hidden;
     }
 
     &__text-container {

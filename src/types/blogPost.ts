@@ -6,7 +6,7 @@ export interface BlogPost {
   id: number;
   category: Language;
   title: Language;
-  description: Language;
   text: Language;
+  description: Language;
   img: StaticImageData;
 }

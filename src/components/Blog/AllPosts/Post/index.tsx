@@ -2,15 +2,24 @@ import { FC } from "react";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 
+import { pagesPathEnam } from "types/pages";
+
+import { useRouter } from "../../../../navigation";
 import { PostProps } from "./types";
 import styles from "./styles.module.scss";
 
 export const Post: FC<PostProps> = ({ post }) => {
+  const router = useRouter();
+
   const localActive = useLocale() as "ru" | "en";
-  const { category, title, text, img } = post;
+  const { id, category, title, text, img } = post;
+
+  const handleClick = () => {
+    router.push(`/${pagesPathEnam.Blog}/${id}`);
+  };
 
   return (
-    <article className={styles.post}>
+    <article className={styles.post} onClick={handleClick}>
       <div className={styles["post__img-container"]}>
         <Image src={img} alt="post-image" />
       </div>
