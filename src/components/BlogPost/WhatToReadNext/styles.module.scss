@@ -1,0 +1,40 @@
+@import 'assets/styles/colors';
+
+.what-to-read-next {
+    margin-top: 128px;
+    padding-bottom: 64px;
+    border-bottom: 1px solid $color-grey;
+
+    &__title {
+        text-align: left;
+    }
+
+    &__cards-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 64px;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 405px;
+
+    &__img-container{
+        width: 100%;
+        height: 318px;
+    }
+
+    &__label {
+        margin-top: 32px;
+    }
+
+    &__title {
+        margin-top: 16px;
+    }
+
+    &__text {
+        margin-top: 16px;
+    }
+}

@@ -1,11 +1,12 @@
+import { BlogPost } from "types";
 import Blog1 from "assets/images/png/blogs/blog1.png";
 import Blog2 from "assets/images/png/blogs/blog2.png";
-
-import { BlogPost } from "../components/Blog/AllPosts/types";
 
 export const blogBosts: BlogPost[] = [
   {
     id: 1,
+    author: "John Doe",
+    date: "Aug 23, 2021",
     category: { en: "Startup", ru: "" },
     title: { en: "Design tips for designers that cover everything you need", ru: "" },
     text: {
@@ -33,6 +34,8 @@ export const blogBosts: BlogPost[] = [
   },
   {
     id: 2,
+    author: "John Doe",
+    date: "Aug 23, 2021",
     category: { en: "Startup", ru: "" },
     title: { en: "Design tips for designers that cover everything you need", ru: "" },
     text: {
@@ -60,6 +63,8 @@ export const blogBosts: BlogPost[] = [
   },
   {
     id: 3,
+    author: "John Doe",
+    date: "Aug 23, 2021",
     category: { en: "Startup", ru: "" },
     title: { en: "Design tips for designers that cover everything you need", ru: "" },
     text: {
@@ -87,6 +92,8 @@ export const blogBosts: BlogPost[] = [
   },
   {
     id: 4,
+    author: "John Doe",
+    date: "Aug 23, 2021",
     category: { en: "Startup", ru: "" },
     title: { en: "Design tips for designers that cover everything you need", ru: "" },
     text: {
@@ -114,6 +121,8 @@ export const blogBosts: BlogPost[] = [
   },
   {
     id: 5,
+    author: "John Doe",
+    date: "Aug 23, 2021",
     category: { en: "Startup", ru: "" },
     title: { en: "Design tips for designers that cover everything you need", ru: "" },
     text: {
@@ -141,6 +150,8 @@ export const blogBosts: BlogPost[] = [
   },
   {
     id: 6,
+    author: "John Doe",
+    date: "Aug 23, 2021",
     category: { en: "Startup", ru: "" },
     title: { en: "Design tips for designers that cover everything you need", ru: "" },
     text: {
@@ -168,6 +179,8 @@ export const blogBosts: BlogPost[] = [
   },
   {
     id: 7,
+    author: "John Doe",
+    date: "Aug 23, 2021",
     category: { en: "Startup", ru: "" },
     title: { en: "Design tips for designers that cover everything you need", ru: "" },
     text: {
@@ -195,6 +208,8 @@ export const blogBosts: BlogPost[] = [
   },
   {
     id: 8,
+    author: "John Doe",
+    date: "Aug 23, 2021",
     category: { en: "Startup", ru: "" },
     title: { en: "Design tips for designers that cover everything you need", ru: "" },
     text: {
@@ -222,6 +237,8 @@ export const blogBosts: BlogPost[] = [
   },
   {
     id: 9,
+    author: "John Doe",
+    date: "Aug 23, 2021",
     category: { en: "Startup", ru: "" },
     title: { en: "Design tips for designers that cover everything you need", ru: "" },
     text: {
@@ -249,6 +266,8 @@ export const blogBosts: BlogPost[] = [
   },
   {
     id: 10,
+    author: "John Doe",
+    date: "Aug 23, 2021",
     category: { en: "Startup", ru: "" },
     title: { en: "Design tips for designers that cover everything you need", ru: "" },
     text: {

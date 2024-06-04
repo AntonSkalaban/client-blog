@@ -9,4 +9,6 @@ export interface BlogPost {
   text: Language;
   description: Language;
   img: StaticImageData;
+  author: string;
+  date: string;
 }
