@@ -5,6 +5,7 @@
     background-color: transparent;
     align-items: center;
 
+    padding-left: 109px;
     margin: 0 0 0 auto;
 
     &__title-block {
@@ -12,10 +13,6 @@
         padding: 64px;
         background-color: $color-white;
         z-index: 5;
-    }
-
-    &__cap {
-
     }
 
     &__title {
