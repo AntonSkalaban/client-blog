@@ -1,0 +1,36 @@
+@import 'assets/styles/colors';
+@import 'assets/styles/mixins';
+
+.our-team {
+    margin-top: 128px;
+    height: 480px;
+    @include flexBetween;
+
+    &__text-block {
+        width: 519px;
+    }
+
+    &__subtitle {
+        margin-top: 16px;
+    }
+
+    &__text {
+        margin-top: 16px;
+        color: $color-grey;
+    }
+    &__img-block {
+        width: 624px;
+        position: relative;
+    }
+
+    &__decor {
+        width: 103px;
+        height: 116px;
+        position: absolute;
+        left: -52px;
+        bottom: 50%;
+        
+        background: $color-yellow;
+        border-top-left-radius: 40px;
+    }
+}
