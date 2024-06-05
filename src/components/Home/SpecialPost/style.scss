@@ -1,13 +1,14 @@
 @import 'assets/styles/colors';
 
+
 .special-post {
+    width: 100%;
+    height: 705px;
     position: relative;
     margin-top: 128px;
-
-    &__img-container {
-        width: 949px;
-        height: 705px;
-    }
+    background-image: url("../../../assets/images/png/close-up.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 
     &__content {
         width: 546px;

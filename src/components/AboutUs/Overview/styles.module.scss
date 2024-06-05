@@ -1,0 +1,51 @@
+@import 'assets/styles/colors';
+@import 'assets/styles/mixins';
+
+
+.overview {
+    width: 100%;
+    height: 444px;
+
+    position: relative;
+    top: -64px;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+
+    background-image: url('../../../assets/images/png/overview.png');
+    background-repeat: no-repeat;
+
+    padding-left: 64px;
+
+    &__info {
+        width: fit-content;
+        height: 156px;
+        background-color: $color-yellow;
+
+        @include flexBetween;
+        gap: 68px;
+
+        padding: 0 48px;
+    }
+
+    &__line {
+            width: 68%;
+            height: 23px;
+            position: absolute;
+            left: 64px;
+            top: calc(100% - 23px);
+            background-color: $color-yellow;
+    
+            &_purple {
+                width: 30%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                background-color: $color-purple;
+            }
+
+    }
+}
