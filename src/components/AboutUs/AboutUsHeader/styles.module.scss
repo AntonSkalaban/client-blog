@@ -1,0 +1,28 @@
+@import 'assets/styles/colors';
+
+.about-us-header {
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+
+    margin: 0 0 0 auto;
+
+    &__title-block {
+        width: 496px;
+        padding: 64px;
+        background-color: $color-white;
+    }
+
+    &__cap {
+
+    }
+
+    &__title {
+        margin-top: 16px;
+    }
+
+    &__text {
+        width: 477px;
+        padding: 32px;
+    }
+}
