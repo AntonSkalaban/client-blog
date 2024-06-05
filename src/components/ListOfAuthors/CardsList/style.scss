@@ -1,0 +1,12 @@
+@import 'assets/styles/mixins';
+
+.authors-cards-list {
+    margin-top: 48px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    // @include flexBetween;
+    flex-wrap: wrap;
+    gap: 32px;
+}

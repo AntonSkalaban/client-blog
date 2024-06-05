@@ -1,15 +1,27 @@
 import { FC } from "react";
 
-import { JoinOurTeam, lazyComponents, StepByStep, Wrapper } from "components";
+import {
+  AboutUs,
+  ChooseCategory,
+  FeaturedPosts,
+  JoinOurTeam,
+  ListOfAuthors,
+  SpecialPost,
+  StepByStep,
+  Wrapper,
+} from "components";
+import { authors } from "constants/index";
 
 const Home: FC = () => {
   return (
     <>
       <StepByStep />
       <Wrapper>
-        {lazyComponents.map((Component) => (
-          <Component key={Component.name} />
-        ))}
+        <FeaturedPosts />
+        <AboutUs />
+        <ChooseCategory />
+        <SpecialPost />
+        <ListOfAuthors authors={authors.slice(0, 4)} />
         <JoinOurTeam />
       </Wrapper>
     </>

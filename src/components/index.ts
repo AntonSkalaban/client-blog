@@ -10,3 +10,4 @@ export * from "./Nav";
 export * from "./Footer";
 export * from "./JoinOurTeam";
 export * from "./CategoryCards";
+export * from "./ListOfAuthors";

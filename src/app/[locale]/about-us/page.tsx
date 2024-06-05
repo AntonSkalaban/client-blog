@@ -1,6 +1,16 @@
 import { FC } from "react";
 
-import { AboutUsHeader, MissionVision, OurTeam, Overview, WhyWeStarted, Wrapper } from "components";
+import {
+  AboutUsHeader,
+  JoinOurTeam,
+  ListOfAuthors,
+  MissionVision,
+  OurTeam,
+  Overview,
+  WhyWeStarted,
+  Wrapper,
+} from "components";
+import { authors } from "constants/index";
 
 const AboutUs: FC = () => {
   return (
@@ -11,6 +21,8 @@ const AboutUs: FC = () => {
         <MissionVision />
         <OurTeam />
         <WhyWeStarted />
+        <ListOfAuthors key={1} authors={authors} />
+        <JoinOurTeam />
       </Wrapper>
     </>
   );
