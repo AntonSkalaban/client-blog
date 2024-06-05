@@ -1,10 +1,13 @@
+"use client";
 import { FC } from "react";
 import { useTranslations } from "next-intl";
+
+import { withLazyLoad } from "hoc";
 
 import Slider from "./Slider";
 import "./style.scss";
 
-export const Testimonials: FC = () => {
+export const Testimonials: FC = withLazyLoad(() => {
   const t = useTranslations("home.testimonials");
 
   return (
@@ -17,4 +20,4 @@ export const Testimonials: FC = () => {
       <Slider />
     </section>
   );
-};
+});

@@ -1,10 +1,13 @@
+"use client";
 import { FC } from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
+import { withLazyLoad } from "hoc";
+
 import "./style.scss";
 
-export const AboutUs: FC = () => {
+export const AboutUs: FC = withLazyLoad(() => {
   const t = useTranslations("home.aboutUs");
 
   return (
@@ -29,4 +32,4 @@ export const AboutUs: FC = () => {
       </div>
     </section>
   );
-};
+});

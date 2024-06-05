@@ -1,12 +1,14 @@
+"use client";
 import { FC } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
+import { withLazyLoad } from "hoc";
 import CloseUp from "assets/images/png/close-up.png";
 
 import "./style.scss";
 
-export const SpecialPost: FC = () => {
+export const SpecialPost: FC = withLazyLoad(() => {
   const t = useTranslations("home.specialPost");
 
   return (
@@ -24,4 +26,4 @@ export const SpecialPost: FC = () => {
       </div>
     </section>
   );
-};
+});

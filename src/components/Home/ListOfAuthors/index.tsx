@@ -1,10 +1,13 @@
+"use client";
 import { FC } from "react";
 import { useTranslations } from "next-intl";
+
+import { withLazyLoad } from "hoc";
 
 import CardsList from "./CardsList";
 import "./style.scss";
 
-export const ListOfAuthors: FC = () => {
+export const ListOfAuthors: FC = withLazyLoad(() => {
   const t = useTranslations("home.listOfAuthors");
 
   return (
@@ -13,4 +16,4 @@ export const ListOfAuthors: FC = () => {
       <CardsList />
     </section>
   );
-};
+});
