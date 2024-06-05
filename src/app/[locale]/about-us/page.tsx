@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { AboutUsHeader, MissionVision, OurTeam, Overview, Wrapper } from "components";
+import { AboutUsHeader, MissionVision, OurTeam, Overview, WhyWeStarted, Wrapper } from "components";
 
 const AboutUs: FC = () => {
   return (
@@ -10,6 +10,7 @@ const AboutUs: FC = () => {
         <Overview />
         <MissionVision />
         <OurTeam />
+        <WhyWeStarted />
       </Wrapper>
     </>
   );

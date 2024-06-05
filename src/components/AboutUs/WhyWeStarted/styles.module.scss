@@ -1,7 +1,7 @@
 @import 'assets/styles/colors';
 @import 'assets/styles/mixins';
 
-.our-team {
+.why-we-started {
     margin-top: 128px;
     height: 480px;
     @include flexBetween;
@@ -25,13 +25,14 @@
     }
 
     &__decor {
-        width: 103px;
-        height: 116px;
+
+        width: 74px;
+        height: 74px;
+
         position: absolute;
-        left: calc(50% - 52px);
-        bottom: 50%;
-        
-        background: $color-yellow;
-        border-top-left-radius: 40px;
+        bottom: -38px;
+        left: 107px;
+        background: $color-purple;
+        border-radius: 50%;
     }
 }
