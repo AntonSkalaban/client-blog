@@ -11,3 +11,4 @@ export * from "./Footer";
 export * from "./JoinOurTeam";
 export * from "./CategoryCards";
 export * from "./ListOfAuthors";
+export * from "./Category";

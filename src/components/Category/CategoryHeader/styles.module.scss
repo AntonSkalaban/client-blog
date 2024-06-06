@@ -1,0 +1,25 @@
+@import 'assets/styles/colors'; 
+@import 'assets/styles/mixins'; 
+
+.category-header {
+    height: 348px;
+    background-color: $color-light-pink;
+    @include flexCenter;
+    // text-align: center;
+
+    &__container {
+        width: 517px;
+        text-align: center;
+    }
+
+    &__text {
+        margin-top: 16px;
+    }
+
+    &__cap {
+        margin-top: 32px;
+        color: $color-dark-blue;
+    }
+
+  
+}
