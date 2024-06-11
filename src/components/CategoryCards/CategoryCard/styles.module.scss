@@ -32,3 +32,26 @@
         color: $color-grey;
     }
 }
+
+aside {
+    .category-card {
+        width: 100%;
+        height: 96px;
+        box-sizing: border-box;
+
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 0;
+        padding-left: 24px;
+    
+        &__title {
+            margin-top: 0;
+        }
+    
+        &__text {
+            display: none;
+        }
+    }
+}

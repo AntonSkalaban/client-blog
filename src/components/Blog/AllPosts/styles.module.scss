@@ -4,8 +4,6 @@
 
 .all-posts {
     margin-top: 64px;
-  
-
     &__title {
         color: $color-dark-blue;
         padding-bottom: 32px;
@@ -24,8 +22,6 @@
 
 
 }
-
-
 
 .controls {
     @include flexCenter;

@@ -11,7 +11,7 @@ import {
 } from "components";
 import { blogBosts } from "constants/index";
 
-export default function BlogPost({ params }: { params: { id: string } }) {
+function BlogPost({ params }: { params: { id: string } }) {
   const localActive = useLocale() as "ru" | "en";
 
   const post = blogBosts.find((post) => post.id === +params.id);
@@ -33,3 +33,4 @@ export default function BlogPost({ params }: { params: { id: string } }) {
     </>
   );
 }
+export default BlogPost;

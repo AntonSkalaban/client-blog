@@ -1,12 +1,12 @@
 "use client";
 import { FC, useMemo } from "react";
 
+import { Post } from "components/Post";
 import { useSlider } from "hooks";
 import { blogBosts } from "constants/index";
 import { chunkArray } from "utils";
 import { BlogPost } from "types";
 
-import { Post } from "./Post";
 import styles from "./styles.module.scss";
 
 export const AllPosts: FC = () => {

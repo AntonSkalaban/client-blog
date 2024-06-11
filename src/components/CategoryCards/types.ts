@@ -7,3 +7,7 @@ export interface Category {
   title: Language;
   text: Language;
 }
+
+export interface CategoryCardsProps {
+  onClick: (categoryName: string) => void;
+}

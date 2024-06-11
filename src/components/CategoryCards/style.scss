@@ -2,3 +2,9 @@
     display: flex;
     justify-content: space-between;
 }
+
+aside {
+    .category-cards {
+        flex-direction: column;
+    }
+}

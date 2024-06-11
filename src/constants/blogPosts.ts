@@ -7,7 +7,7 @@ export const blogBosts: BlogPost[] = [
     id: 1,
     author: "John Doe",
     date: "Aug 23, 2021",
-    category: { en: "Startup", ru: "" },
+    category: { en: "startup", ru: "" },
     title: { en: "Design tips for designers that cover everything you need", ru: "" },
     text: {
       en: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
@@ -31,12 +31,13 @@ export const blogBosts: BlogPost[] = [
       ru: "",
     },
     img: Blog1,
+    tag: "business",
   },
   {
     id: 2,
     author: "John Doe",
     date: "Aug 23, 2021",
-    category: { en: "Startup", ru: "" },
+    category: { en: "business", ru: "" },
     title: { en: "Design tips for designers that cover everything you need", ru: "" },
     text: {
       en: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
@@ -60,12 +61,13 @@ export const blogBosts: BlogPost[] = [
       ru: "",
     },
     img: Blog2,
+    tag: "business",
   },
   {
     id: 3,
     author: "John Doe",
     date: "Aug 23, 2021",
-    category: { en: "Startup", ru: "" },
+    category: { en: "startup", ru: "" },
     title: { en: "Design tips for designers that cover everything you need", ru: "" },
     text: {
       en: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
@@ -89,12 +91,13 @@ export const blogBosts: BlogPost[] = [
       ru: "",
     },
     img: Blog1,
+    tag: "business",
   },
   {
     id: 4,
     author: "John Doe",
     date: "Aug 23, 2021",
-    category: { en: "Startup", ru: "" },
+    category: { en: "startup", ru: "" },
     title: { en: "Design tips for designers that cover everything you need", ru: "" },
     text: {
       en: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
@@ -118,12 +121,13 @@ export const blogBosts: BlogPost[] = [
       ru: "",
     },
     img: Blog1,
+    tag: "business",
   },
   {
     id: 5,
     author: "John Doe",
     date: "Aug 23, 2021",
-    category: { en: "Startup", ru: "" },
+    category: { en: "startup", ru: "" },
     title: { en: "Design tips for designers that cover everything you need", ru: "" },
     text: {
       en: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
@@ -147,12 +151,13 @@ export const blogBosts: BlogPost[] = [
       ru: "",
     },
     img: Blog1,
+    tag: "business",
   },
   {
     id: 6,
     author: "John Doe",
     date: "Aug 23, 2021",
-    category: { en: "Startup", ru: "" },
+    category: { en: "startup", ru: "" },
     title: { en: "Design tips for designers that cover everything you need", ru: "" },
     text: {
       en: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
@@ -176,12 +181,13 @@ export const blogBosts: BlogPost[] = [
       ru: "",
     },
     img: Blog1,
+    tag: "business",
   },
   {
     id: 7,
     author: "John Doe",
     date: "Aug 23, 2021",
-    category: { en: "Startup", ru: "" },
+    category: { en: "startup", ru: "" },
     title: { en: "Design tips for designers that cover everything you need", ru: "" },
     text: {
       en: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
@@ -205,12 +211,13 @@ export const blogBosts: BlogPost[] = [
       ru: "",
     },
     img: Blog1,
+    tag: "business",
   },
   {
     id: 8,
     author: "John Doe",
     date: "Aug 23, 2021",
-    category: { en: "Startup", ru: "" },
+    category: { en: "startup", ru: "" },
     title: { en: "Design tips for designers that cover everything you need", ru: "" },
     text: {
       en: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
@@ -234,12 +241,13 @@ export const blogBosts: BlogPost[] = [
       ru: "",
     },
     img: Blog1,
+    tag: "business",
   },
   {
     id: 9,
     author: "John Doe",
     date: "Aug 23, 2021",
-    category: { en: "Startup", ru: "" },
+    category: { en: "startup", ru: "" },
     title: { en: "Design tips for designers that cover everything you need", ru: "" },
     text: {
       en: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
@@ -263,12 +271,13 @@ export const blogBosts: BlogPost[] = [
       ru: "",
     },
     img: Blog1,
+    tag: "business",
   },
   {
     id: 10,
     author: "John Doe",
     date: "Aug 23, 2021",
-    category: { en: "Startup", ru: "" },
+    category: { en: "startup", ru: "" },
     title: { en: "Design tips for designers that cover everything you need", ru: "" },
     text: {
       en: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
@@ -292,5 +301,6 @@ export const blogBosts: BlogPost[] = [
       ru: "",
     },
     img: Blog1,
+    tag: "business",
   },
 ];

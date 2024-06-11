@@ -1,12 +1,14 @@
+"use client:";
 import { FC } from "react";
 import { useLocale } from "next-intl";
 
 import { categories } from "constants/index";
 
 import { CategoryCard } from "./CategoryCard";
+import { CategoryCardsProps } from "./types";
 import "./style.scss";
 
-export const CategoryCards: FC = () => {
+export const CategoryCards: FC<CategoryCardsProps> = ({ onClick }) => {
   const localActive = useLocale() as "ru" | "en";
 
   return (
@@ -18,6 +20,7 @@ export const CategoryCards: FC = () => {
             image={image}
             title={title[localActive]}
             text={text[localActive]}
+            onClick={onClick}
           />
         );
       })}
