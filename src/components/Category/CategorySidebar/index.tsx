@@ -4,7 +4,6 @@ import { FC } from "react";
 import { CategoryCards } from "components";
 import { pagesPathEnam } from "types/pages";
 
-import ClientComponent from "./Searchbar/comp";
 import { useRouter } from "../../../navigation";
 import { AllTags } from "./AllTags";
 import { Searchabr } from "./Searchbar";
@@ -20,11 +19,8 @@ export const CategorySidebar: FC<CategorySidebarProps> = ({ tag, onTagChange }) 
 
   return (
     <aside className={styles["category-sidebar"]}>
-      <ClientComponent>
-        {" "}
-        <Searchabr onClick={onTagChange} tagValue={tag} />
-      </ClientComponent>
-
+      {" "}
+      <Searchabr onClick={onTagChange} tagValue={tag} />
       <h2>Categories</h2>
       <CategoryCards onClick={hanldeCategoryClick} />
       <AllTags onClick={onTagChange} />
