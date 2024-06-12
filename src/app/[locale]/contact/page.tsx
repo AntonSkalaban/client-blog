@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { ContactForm, ContactHeader, ContactInfo } from "components";
+import { ContactForm, ContactHeader, ContactInfo, ContactMap } from "components";
 
 import styled from "./styled.module.scss";
 
@@ -12,6 +12,7 @@ const Contact: FC = () => {
         <ContactInfo />
         <ContactForm />
       </div>
+      <ContactMap />
     </>
   );
 };
