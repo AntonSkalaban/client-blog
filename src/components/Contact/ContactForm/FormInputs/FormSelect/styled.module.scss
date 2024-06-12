@@ -1,0 +1,54 @@
+@import 'assets/styles/colors';
+@import 'assets/styles/mixins';
+
+.select {
+  position: relative;
+
+ &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+  &__options-list {
+   width: 100%;
+   max-height: 200px;
+    height: fit-content;
+  
+    overflow: scroll;
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    z-index: 5;
+    background-color: #fff;
+
+    @include borderGrey;
+  }
+
+  &__option {
+    cursor: pointer;
+    padding: 5px;
+  
+    &:hover {
+      background-color: #eee;
+    }
+  }
+
+}
+  
+
+// export const StyledSelect = styled.div`
+//   ${inputMixin}
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// `;
+
+// export const SelectBtn = styled.button`
+//   width: 20px;
+//   height: 20px;
+//   cursor: pointer;
+// `;
+
+
+

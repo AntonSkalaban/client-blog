@@ -6,6 +6,7 @@ body {
     font-style: normal;
     box-sizing: border-box;
     color: $color-dark-blue;
+    font-size: 16px;
 }
 
 header, footer {
@@ -127,4 +128,16 @@ p {
     font-weight: 700;
     font-size: 24px;
     line-height: 48px;  
+}
+
+.form-input {
+    width: 100%;
+    padding: 24px;
+
+    box-sizing: border-box;
+    @include borderGrey;
+    border-radius: 2px;
+
+    line-height: 28px;
+    font-weight: 400;
 }

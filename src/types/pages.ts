@@ -9,6 +9,6 @@ export enum pagesPathEnam {
   Home = "",
   Blog = "blog",
   AnoutUs = "about-us",
-  ContacUs = "contac-us",
+  ContacUs = "contact",
   Category = "category",
 }

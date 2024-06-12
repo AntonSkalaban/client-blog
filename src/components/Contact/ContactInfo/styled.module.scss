@@ -1,0 +1,29 @@
+@import 'assets/styles/colors';
+
+.contact-info {
+    background-color: $color-purple;
+    margin-top: 64px;
+
+    display: flex;
+
+    justify-content: space-between;
+    padding: 48px 64px;
+
+    &__block {
+        width: 294px;
+        color: $color-white;
+    }
+
+    &__title {
+        padding-bottom: 16px;
+        border-bottom: 1px solid $color-grey;
+    }
+
+    &__info {
+        margin-top: 16px;
+    }
+
+    &__text {
+        color: $color-grey;
+    }
+}
