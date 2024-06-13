@@ -1,4 +1,4 @@
-export interface CategorySidebarProps {
-  tag: string;
-  onTagChange: (tag: string) => void;
-}
+// export interface CategorySidebarProps {
+//   tag: string;
+//   onTagChange: (tag: string) => void;
+// }

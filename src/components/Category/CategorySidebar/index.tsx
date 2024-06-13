@@ -1,4 +1,3 @@
-// "use client";
 import { FC } from "react";
 
 import { CategoryCards } from "components";
@@ -6,11 +5,10 @@ import { pagesPathEnam } from "types/pages";
 
 import { useRouter } from "../../../navigation";
 import { AllTags } from "./AllTags";
-import { Searchabr } from "./Searchbar";
-import { CategorySidebarProps } from "./types";
+import { Searchbar } from "./Searchbar";
 import styles from "./styles.module.scss";
 
-export const CategorySidebar: FC<CategorySidebarProps> = ({ tag, onTagChange }) => {
+export const CategorySidebar: FC = () => {
   const { replace } = useRouter();
 
   const hanldeCategoryClick = (category: string) => {
@@ -20,10 +18,10 @@ export const CategorySidebar: FC<CategorySidebarProps> = ({ tag, onTagChange }) 
   return (
     <aside className={styles["category-sidebar"]}>
       {" "}
-      <Searchabr onClick={onTagChange} tagValue={tag} />
+      <Searchbar />
       <h2>Categories</h2>
       <CategoryCards onClick={hanldeCategoryClick} />
-      <AllTags onClick={onTagChange} />
+      <AllTags />
     </aside>
   );
 };

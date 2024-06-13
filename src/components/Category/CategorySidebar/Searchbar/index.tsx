@@ -1,19 +1,23 @@
 "use client";
-
 import { ChangeEvent, FC, useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 
-import { SearchbarProps } from "./types";
+import { useChangeSearchParams } from "hooks";
+
 import styles from "./styles.module.scss";
 
-export const Searchabr: FC<SearchbarProps> = ({ tagValue, onClick }) => {
-  const [value, setValue] = useState(tagValue);
+export const Searchbar: FC = () => {
+  const searchParams = useSearchParams();
+  const { changeSearchParams } = useChangeSearchParams(searchParams);
+
+  const [value, setValue] = useState("");
 
   useEffect(() => {
-    setValue(tagValue);
-  }, [tagValue]);
+    setValue(searchParams.get("tag") || "");
+  }, [searchParams]);
 
   const hanldeClick = () => {
-    onClick(value);
+    changeSearchParams("tag", value);
   };
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
