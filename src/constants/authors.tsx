@@ -9,6 +9,11 @@ export const authors: Author[] = [
     id: 1,
     name: "Floyd Miles",
     image: Auth1,
+    title: { en: "Bla-bla title englisj", ru: "Бла-бла-бла на русском" },
+    text: {
+      en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.",
+      ru: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.",
+    },
     profession: "Content Writer",
     company: "Company",
     contacts: {
@@ -22,6 +27,11 @@ export const authors: Author[] = [
     id: 2,
     name: "Dianne Russell",
     image: Auth2,
+    title: { en: "Bla-bla title englisj", ru: "Бла-бла-бла на русском" },
+    text: {
+      en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus",
+      ru: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.",
+    },
     profession: "Content Writer",
     company: "Company",
     contacts: {
@@ -35,6 +45,11 @@ export const authors: Author[] = [
     id: 3,
     name: "Jenny Wilson",
     image: Auth3,
+    title: { en: "Bla-bla title englisj", ru: "Бла-бла-бла на русском" },
+    text: {
+      en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus",
+      ru: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.",
+    },
     profession: "Content Writer",
     company: "Company",
     contacts: {
@@ -48,6 +63,11 @@ export const authors: Author[] = [
     id: 4,
     name: "Leslie Alexander",
     image: Auth4,
+    title: { en: "Bla-bla title englisj", ru: "Бла-бла-бла на русском" },
+    text: {
+      en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus",
+      ru: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.",
+    },
     profession: "Content Writer",
     company: "Company",
     contacts: {
@@ -61,6 +81,11 @@ export const authors: Author[] = [
     id: 5,
     name: "Floyd Miles",
     image: Auth1,
+    title: { en: "Bla-bla title englisj", ru: "Бла-бла-бла на русском" },
+    text: {
+      en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus",
+      ru: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.",
+    },
     profession: "Content Writer",
     company: "Company",
     contacts: {
@@ -74,6 +99,11 @@ export const authors: Author[] = [
     id: 6,
     name: "Dianne Russell",
     image: Auth2,
+    title: { en: "Bla-bla title englisj", ru: "Бла-бла-бла на русском" },
+    text: {
+      en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus",
+      ru: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.",
+    },
     profession: "Content Writer",
     company: "Company",
     contacts: {
@@ -87,6 +117,11 @@ export const authors: Author[] = [
     id: 7,
     name: "Jenny Wilson",
     image: Auth3,
+    title: { en: "Bla-bla title englisj", ru: "Бла-бла-бла на русском" },
+    text: {
+      en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus",
+      ru: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.",
+    },
     profession: "Content Writer",
     company: "Company",
     contacts: {
@@ -100,6 +135,11 @@ export const authors: Author[] = [
     id: 8,
     name: "Leslie Alexander",
     image: Auth4,
+    title: { en: "Bla-bla title englisj", ru: "Бла-бла-бла на русском" },
+    text: {
+      en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus",
+      ru: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.",
+    },
     profession: "Content Writer",
     company: "Company",
     contacts: {

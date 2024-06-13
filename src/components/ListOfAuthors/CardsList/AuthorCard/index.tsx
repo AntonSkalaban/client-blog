@@ -2,14 +2,23 @@ import { FC } from "react";
 import Image from "next/image";
 
 import { MediaList } from "components";
+import { pagesPathEnam } from "types/pages";
 
+import { useRouter } from "../../../../navigation";
 import { AuthorCardProps } from "./types";
 import "./style.scss";
 
 const AuthorCard: FC<AuthorCardProps> = ({ card }) => {
-  const { image, name, profession, company, contacts } = card;
+  const router = useRouter();
+
+  const { id, image, name, profession, company, contacts } = card;
+
+  const handleClick = () => {
+    router.push(`/${pagesPathEnam.Author}/${id}`);
+  };
+
   return (
-    <div className="author-card">
+    <article className="author-card" onClick={handleClick}>
       <div className="author-card__img-container">
         <Image src={image} alt="author-avatar" />
       </div>
@@ -21,7 +30,7 @@ const AuthorCard: FC<AuthorCardProps> = ({ card }) => {
       </div>
 
       <MediaList links={contacts} />
-    </div>
+    </article>
   );
 };
 

@@ -11,4 +11,5 @@ export enum pagesPathEnam {
   AnoutUs = "about-us",
   ContacUs = "contact",
   Category = "category",
+  Author = "author",
 }

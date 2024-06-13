@@ -14,3 +14,4 @@ export * from "./ListOfAuthors";
 export * from "./Category";
 export * from "./Post";
 export * from "./Contact";
+export * from "./Author";

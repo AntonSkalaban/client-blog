@@ -1,8 +1,6 @@
-import { ReactElement } from "react";
+import { Category } from "../types";
 
 export interface CategoryCardProps {
-  image: ReactElement;
-  title: string;
-  text: string;
+  category: Category;
   onClick: (categoryName: string) => void;
 }

@@ -10,7 +10,7 @@ export interface BlogPost {
   text: Language;
   description: Language;
   img: StaticImageData;
-  author: string;
+  authorId: number;
   date: string;
   tag: (typeof tags)[number];
 }

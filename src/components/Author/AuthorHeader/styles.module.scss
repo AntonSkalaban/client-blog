@@ -1,0 +1,52 @@
+@import 'assets/styles/colors';
+@import 'assets/styles/mixins';
+
+.author-header {
+    height: 550px;
+    background: $color-light-pink;
+
+    &__wrapper {
+        width: 1024px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        @include flexCenter;
+    }
+
+    &__container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 32px
+        
+    }
+
+    &__img-container {
+        min-width: 251px;
+        width: 251px;
+        height: 294px;
+    }
+
+    &__info-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px
+    }
+
+    &__decor-line {
+        width: 80%;
+        height: 23px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: $color-yellow;
+
+        &_purple {
+            width: 25%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            background-color: $color-purple;
+        }
+    }
+}
