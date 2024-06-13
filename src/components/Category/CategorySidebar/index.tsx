@@ -5,7 +5,7 @@ import { pagesPathEnam } from "types/pages";
 
 import { useRouter } from "../../../navigation";
 import { AllTags } from "./AllTags";
-import { Searchbar } from "./Searchbar";
+import { ElasticSearch } from "./ElasticSearch";
 import styles from "./styles.module.scss";
 
 export const CategorySidebar: FC = () => {
@@ -17,9 +17,8 @@ export const CategorySidebar: FC = () => {
 
   return (
     <aside className={styles["category-sidebar"]}>
-      {" "}
-      <Searchbar />
-      <h2>Categories</h2>
+      <ElasticSearch />
+      <h2 className={styles["category-sidebar__title"]}>Categories</h2>
       <CategoryCards onClick={hanldeCategoryClick} />
       <AllTags />
     </aside>

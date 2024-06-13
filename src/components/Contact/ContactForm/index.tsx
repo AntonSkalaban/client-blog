@@ -21,6 +21,7 @@ const options = [
   { name: "name2", value: "value2" },
   { name: "name3", value: "value3" },
 ];
+
 export const ContactForm: FC = () => {
   const localActive = useLocale() as "ru" | "en";
   const formRef = useRef<HTMLFormElement>(null);

@@ -45,8 +45,11 @@
 
 .category-page 
     .post {
+        color: red;
         height: 312px;
-
+        &:first-child {
+            margin-top: 0;
+        }
         &__img-container {
             width: 294px;
             height: 100%;

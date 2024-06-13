@@ -1,0 +1,20 @@
+@import 'assets/styles/colors';
+@import 'assets/styles/mixins';
+
+
+.hints {
+    padding: 10px 0;
+    background-color: $color-white;
+    @include borderGrey;
+    height: fit-content;
+    max-height: 100px;
+    overflow: scroll;
+
+    &__item {
+        padding: 3px;
+        cursor: pointer;
+        &:hover {
+            background-color: $color-grey-light;
+        }
+    }
+}

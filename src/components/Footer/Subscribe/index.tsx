@@ -4,7 +4,7 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { useLocale, useTranslations } from "next-intl";
 import { yupResolver } from "@hookform/resolvers/yup";
 
-import { Alert } from "components/UI/Alert";
+import { Alert } from "components";
 
 import { getShema, sandEmail } from "./helpers";
 import { FormValue } from "./types";
@@ -22,7 +22,7 @@ export const Subscribe: FC = () => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm({ resolver: yupResolver(schema) });
+  } = useForm({ resolver: yupResolver(schema), mode: "all" });
 
   const onSubmit: SubmitHandler<FormValue> = async () => {
     if (!form.current) return;
@@ -46,7 +46,7 @@ export const Subscribe: FC = () => {
               {...register("email")}
             />
             {errors.email && (
-              <p className="text-normal subscribe__input-error">{errors.email.message}</p>
+              <p className="text-normal error subscribe__input-error">{errors.email.message}</p>
             )}
           </div>
 

@@ -6,8 +6,8 @@ import { CategoryHeader, CategoryPosts, CategorySidebar, Wrapper } from "compone
 import { blogBosts } from "constants/index";
 
 import { filterPosts } from "./helpers";
-import styles from "./styles.module.scss";
 
+import "./styles.scss";
 const Category: FC<{ params: { name: string } }> = ({ params }) => {
   const searchParams = useSearchParams();
 
@@ -19,7 +19,7 @@ const Category: FC<{ params: { name: string } }> = ({ params }) => {
     <>
       <CategoryHeader categoryName={params.name} />
       <Wrapper>
-        <div className={styles["category-page"]}>
+        <div className={"category-page"}>
           <CategoryPosts posts={filteredPosts} />
           <CategorySidebar />
         </div>

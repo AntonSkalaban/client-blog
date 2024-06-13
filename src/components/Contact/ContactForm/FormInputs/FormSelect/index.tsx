@@ -53,7 +53,7 @@ export const FormSelect = forwardRef<HTMLSelectElement, FormSelectProps>(
             )}
           </div>
         </div>
-        {error && <p>{error}</p>}
+        {error && <p className="error">{error}</p>}
       </>
     );
   },

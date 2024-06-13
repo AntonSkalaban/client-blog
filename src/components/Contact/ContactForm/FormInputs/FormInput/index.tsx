@@ -9,7 +9,7 @@ export const FormInput = forwardRef<HTMLInputElement, FormInputProps>(
     return (
       <>
         <input className="form-input" ref={ref} {...props} />
-        {error && <p>{error}</p>}
+        {error && <p className="error">{error}</p>}
       </>
     );
   },

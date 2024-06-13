@@ -12,7 +12,7 @@ export const FormTextArea: FC<FormTextAreaProps> = forwardRef<
   return (
     <>
       <textarea className={`form-input ${styled.textaria}`} ref={ref} {...props} />
-      {error && <p>{error}</p>}
+      {error && <p className="error">{error}</p>}
     </>
   );
 });

@@ -15,7 +15,7 @@ export const useChangeSearchParams = (searchParams: ReadonlyURLSearchParams) => 
   );
 
   const changeSearchParams = (key: string, value: string) => {
-    router.push(pathname + "?" + createQueryString(key, value));
+    router.replace(pathname + "?" + createQueryString(key, value));
   };
   return { changeSearchParams };
 };

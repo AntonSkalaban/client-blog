@@ -5,7 +5,14 @@ import { errors, publicKey, serviceID, templateID } from "./constants";
 
 export const getShema = (lang: "ru" | "en") => {
   const schema = yup.object({
-    email: yup.string().email(errors.email.valid[lang]).required(errors.email.required[lang]),
+    email: yup
+      .string()
+      .email(errors.email.valid[lang])
+      .matches(
+        /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2}|ru|com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum)\b/,
+        "Is not in correct format",
+      )
+      .required(errors.email.required[lang]),
   });
 
   return schema;

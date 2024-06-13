@@ -4,9 +4,10 @@ import { useSearchParams } from "next/navigation";
 
 import { useChangeSearchParams } from "hooks";
 
+import { Hints } from "./Hints";
 import styles from "./styles.module.scss";
 
-export const Searchbar: FC = () => {
+export const ElasticSearch: FC = () => {
   const searchParams = useSearchParams();
   const { changeSearchParams } = useChangeSearchParams(searchParams);
 
@@ -35,6 +36,7 @@ export const Searchbar: FC = () => {
       <button className={styles.searchbar__btn} onClick={hanldeClick}>
         Search{" "}
       </button>
+      <Hints value={value} />
     </div>
   );
 };
