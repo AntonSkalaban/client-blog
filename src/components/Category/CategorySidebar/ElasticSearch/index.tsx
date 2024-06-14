@@ -9,9 +9,11 @@ import styles from "./styles.module.scss";
 
 export const ElasticSearch: FC = () => {
   const searchParams = useSearchParams();
+  const tag = searchParams.get("tag") || "";
+
   const { changeSearchParams } = useChangeSearchParams(searchParams);
 
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState(tag);
 
   useEffect(() => {
     setValue(searchParams.get("tag") || "");
@@ -25,6 +27,10 @@ export const ElasticSearch: FC = () => {
     setValue(e.target.value);
   };
 
+  const hanldeKeyDown = (e: React.KeyboardEvent<HTMLInputElement | HTMLButtonElement>) => {
+    if (e.key === "Enter") changeSearchParams("tag", value);
+  };
+
   return (
     <div className={styles.searchbar}>
       <input
@@ -32,8 +38,9 @@ export const ElasticSearch: FC = () => {
         className={styles.searchbar__input}
         onChange={handleChange}
         value={value}
+        onKeyDown={hanldeKeyDown}
       />
-      <button className={styles.searchbar__btn} onClick={hanldeClick}>
+      <button className={styles.searchbar__btn} onClick={hanldeClick} onKeyDown={hanldeKeyDown}>
         Search{" "}
       </button>
       <Hints value={value} />
