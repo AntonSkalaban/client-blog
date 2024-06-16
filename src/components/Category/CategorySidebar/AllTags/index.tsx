@@ -1,18 +1,25 @@
-"use client";
+// "use client";
 import { FC } from "react";
-import { useSearchParams } from "next/navigation";
 
-import { useChangeSearchParams } from "hooks";
+// import { useSearchParams } from "next/navigation";
+// import { useChangeSearchParams } from "hooks";
 import { tags } from "constants/index";
 
 import styles from "./styles.module.scss";
 
-export const AllTags: FC = () => {
-  const searchParams = useSearchParams();
-  const { changeSearchParams } = useChangeSearchParams(searchParams);
+interface AllTagsProps {
+  onClick: (value: string) => void;
+}
+export const AllTags: FC<AllTagsProps> = ({ onClick }) => {
+  // const searchParams = useSearchParams();
+  // const { changeSearchParams } = useChangeSearchParams(searchParams);
+
+  // const handleClick = (value: string) => () => {
+  //   changeSearchParams("tag", value);
+  // };
 
   const handleClick = (value: string) => () => {
-    changeSearchParams("tag", value);
+    onClick(value);
   };
 
   return (
@@ -22,7 +29,7 @@ export const AllTags: FC = () => {
         {tags.map((tag) => (
           <button
             key={tag}
-            className={`${styles.tag} ${searchParams.has("tag", tag) ? styles.tag_active : ""}`}
+            // className={`${styles.tag} ${searchParams.has("tag", tag) ? styles.tag_active : ""}`}
             onClick={handleClick(tag)}
           >
             {tag}

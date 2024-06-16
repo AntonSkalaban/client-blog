@@ -1,15 +1,22 @@
 @import 'assets/styles/colors';
-
+@import 'assets/styles/mixins';
 .about-us {
     position: relative;
+    // height: 500px;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    // gap: 82px;
+    //  justify-content: center;
+     justify-content: space-between;
     background-color: $color-light-pink;
     padding: 96px 80px;
     margin-top: 151px;
+
+    @include breakpoint(lg) {
+       flex-direction: column;
+       gap: 20px;
+    }
 
     &__decor-line {
         width: 80%;

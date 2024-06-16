@@ -7,7 +7,7 @@ import AuthorAndDate from "../AuthorAndDate";
 import { FeaturePostProps } from "./types";
 import "./style.scss";
 
-const FeaturePost: FC<FeaturePostProps> = ({ post }) => {
+export const FeaturePost: FC<FeaturePostProps> = ({ post }) => {
   const t = useTranslations("home.featurePosts");
 
   const { image, author, date, title, text } = post;
@@ -28,5 +28,3 @@ const FeaturePost: FC<FeaturePostProps> = ({ post }) => {
     </div>
   );
 };
-
-export default FeaturePost;

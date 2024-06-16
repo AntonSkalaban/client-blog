@@ -1,17 +1,37 @@
+@import 'assets/styles/mixins';
+
 .feature-posts {
     display: flex;
     flex-direction: row;
     gap: 32px;
     margin-top: 128px;
 
+    // @include breakpoint(lg) {
+    //    flex-direction: column;
+    // }
+
     &__title {
         margin-bottom: 32px;
     }
 
     &__post-container {
-        width: 733px;
-    }
-   
+        // width: 733px;
+        width: 57%;
+        @include breakpoint(lg) {
+            width: 650px;
+        }
+     }
+
+    &__all-posts-container {
+        width: calc(100% - 57% - 10px);
+
+        // @include breakpoint(lg) {
+        //     width: calc(100% - 650px);
+        // }
+        // @include breakpoint(lg) {
+        //     width: 100%;
+        // }
+        }
 }
 
 

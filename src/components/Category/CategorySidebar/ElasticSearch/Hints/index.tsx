@@ -1,38 +1,23 @@
-"use client";
-import { FC, useDeferredValue, useEffect, useMemo, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { FC, useDeferredValue } from "react";
 
-import { useChangeSearchParams, useClickOutside } from "hooks";
+import { useClickOutside } from "hooks";
 import { tags } from "constants/index";
 
+import { HintsProps } from "./types";
 import styles from "./styles.module.scss";
 
-interface HintsProps {
-  value: string;
-}
-export const Hints: FC<HintsProps> = ({ value }) => {
-  const searchParams = useSearchParams();
+export const Hints: FC<HintsProps> = ({ value, closeHints, onClick }) => {
   const defferedValue = useDeferredValue(value);
 
-  const { changeSearchParams } = useChangeSearchParams(searchParams);
-  const ref = useClickOutside(() => setIsOpen(false));
-  const [isOpen, setIsOpen] = useState(false);
+  const ref = useClickOutside(() => closeHints());
 
-  useEffect(() => {
-    setIsOpen(!!value);
-  }, [value]);
-
-  const hints = useMemo(
-    () => tags.filter((tag) => tag.includes(defferedValue.toLowerCase())),
-    [defferedValue],
-  );
+  const hints = tags.filter((tag) => tag.includes(defferedValue.toLowerCase()));
 
   const handleClick = (tagName: string) => () => {
-    changeSearchParams("tag", tagName);
-    setIsOpen(false);
+    onClick(tagName);
   };
 
-  if (!isOpen || !hints.length) return null;
+  if (!hints.length) return null;
 
   return (
     <div className={styles.hints} ref={ref}>

@@ -4,10 +4,10 @@ import {
   AboutUs,
   ChooseCategory,
   FeaturedPosts,
+  HomeHeader,
   JoinOurTeam,
   ListOfAuthors,
   SpecialPost,
-  StepByStep,
   Wrapper,
 } from "components";
 import { authors } from "constants/index";
@@ -15,7 +15,7 @@ import { authors } from "constants/index";
 const Home: FC = () => {
   return (
     <>
-      <StepByStep />
+      <HomeHeader />
       <Wrapper>
         <FeaturedPosts />
         <AboutUs />

@@ -6,7 +6,7 @@ import { withLazyLoad } from "hoc";
 
 import { AllPosts } from "./AllPosts";
 import { posts } from "./constants";
-import FeaturePost from "./FeaturePost";
+import { FeaturePost } from "./FeaturePost";
 import { Post } from "./types";
 import "./style.scss";
 
@@ -24,7 +24,7 @@ export const FeaturedPosts: FC = withLazyLoad(() => {
         <h2 className="feature-posts__title">{t("featurePost.title")}</h2>
         <FeaturePost post={openPost} />
       </div>
-      <div>
+      <div className="feature-posts__all-posts-container">
         {" "}
         <h2 className="feature-posts__title">{t("allPosts.title")}</h2>
         <AllPosts posts={posts.slice(0, 4)} onClick={hanldeOpenPost} activePostId={openPost.id} />

@@ -1,7 +1,8 @@
 @import 'assets/styles/colors';
 
 .post {
-    width: 517px;
+    width: 100%;
+    min-width: 420px;
     height: 181px;
 
     box-sizing: border-box;

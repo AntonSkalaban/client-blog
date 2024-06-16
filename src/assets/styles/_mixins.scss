@@ -1,4 +1,21 @@
 @import './colors';
+@import './breakpoints';
+
+@mixin breakpoint($point) {
+    @if ($point == lg) {
+      @media (max-width: $lg) {
+        @content;
+      }
+    } @else if ($point == md) {
+      @media (max-width: $md) {
+        @content;
+      }
+    } @else if ($point == sm) {
+      @media (max-width: $sm) {
+        @content;
+      }
+    }
+}
 
 @mixin buttonMixin {
     font-style: normal;

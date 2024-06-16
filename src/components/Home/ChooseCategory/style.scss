@@ -1,7 +1,19 @@
+@import 'assets/styles/mixins';
+
 .choose-category {
     margin-top: 128px;
 
     &__title {
         text-align: center;
     }
+
+    @include breakpoint(lg) {
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+     }
+
 }
