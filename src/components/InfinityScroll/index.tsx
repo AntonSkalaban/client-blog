@@ -10,6 +10,7 @@ export const InfinityScroll: FC<InfinityScrollProps> = ({ children }) => {
   const [count, setCount] = useState(1);
 
   useEffect(() => {
+    const currentRef = observerRef.current;
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
@@ -21,13 +22,13 @@ export const InfinityScroll: FC<InfinityScrollProps> = ({ children }) => {
       { threshold: 0.5 },
     );
 
-    if (observerRef.current) {
-      observer.observe(observerRef.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (observerRef.current) {
-        observer.unobserve(observerRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, [count, children, visibleItems.length]);
