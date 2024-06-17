@@ -2,14 +2,13 @@
 import { FC } from "react";
 import { useTranslations } from "next-intl";
 
-import { withLazyLoad } from "hoc";
 import { CategoryCards } from "components";
 import { pagesPathEnam } from "types/index";
 
 import { useRouter } from "../../../navigation";
 import "./style.scss";
 
-export const ChooseCategory: FC = withLazyLoad(() => {
+export const ChooseCategory: FC = () => {
   const router = useRouter();
   const t = useTranslations("home.category");
 
@@ -23,4 +22,4 @@ export const ChooseCategory: FC = withLazyLoad(() => {
       <CategoryCards onClick={handleClick} />
     </section>
   );
-});
+};

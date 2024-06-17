@@ -2,15 +2,13 @@
 import { FC, useState } from "react";
 import { useTranslations } from "next-intl";
 
-import { withLazyLoad } from "hoc";
-
 import { AllPosts } from "./AllPosts";
 import { posts } from "./constants";
 import { FeaturePost } from "./FeaturePost";
 import { Post } from "./types";
 import "./style.scss";
 
-export const FeaturedPosts: FC = withLazyLoad(() => {
+export const FeaturedPosts: FC = () => {
   const t = useTranslations("home.featurePosts");
   const [openPost, setOpenPost] = useState(posts[0]);
 
@@ -31,4 +29,4 @@ export const FeaturedPosts: FC = withLazyLoad(() => {
       </div>
     </section>
   );
-});
+};

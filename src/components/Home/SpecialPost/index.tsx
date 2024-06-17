@@ -2,12 +2,11 @@
 import { FC } from "react";
 import { useTranslations } from "next-intl";
 
-import { withLazyLoad } from "hoc";
 import { Wrapper } from "components";
 
 import "./style.scss";
 
-export const SpecialPost: FC = withLazyLoad(() => {
+export const SpecialPost: FC = () => {
   const t = useTranslations("home.specialPost");
 
   return (
@@ -24,4 +23,4 @@ export const SpecialPost: FC = withLazyLoad(() => {
       </Wrapper>
     </section>
   );
-});
+};

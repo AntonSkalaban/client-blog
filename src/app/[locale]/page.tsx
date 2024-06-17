@@ -5,11 +5,12 @@ import {
   ChooseCategory,
   FeaturedPosts,
   HomeHeader,
-  JoinOurTeam,
   ListOfAuthors,
   SpecialPost,
+  Testimonials,
   Wrapper,
 } from "components";
+import { InfinityScroll } from "components/InfinityScroll";
 import { authors } from "constants/index";
 
 const Home: FC = () => {
@@ -17,12 +18,14 @@ const Home: FC = () => {
     <>
       <HomeHeader />
       <Wrapper>
-        <FeaturedPosts />
-        <AboutUs />
-        <ChooseCategory />
-        <SpecialPost />
-        <ListOfAuthors authors={authors.slice(0, 4)} />
-        <JoinOurTeam />
+        <InfinityScroll>
+          <FeaturedPosts />
+          <AboutUs />
+          <ChooseCategory />
+          <SpecialPost />
+          <Testimonials />
+          <ListOfAuthors authors={authors.slice(0, 4)} />
+        </InfinityScroll>
       </Wrapper>
     </>
   );

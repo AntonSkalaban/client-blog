@@ -2,7 +2,6 @@
 import { FC } from "react";
 import { useTranslations } from "next-intl";
 
-import { withLazyLoad } from "hoc";
 import { Author } from "types";
 
 import CardsList from "./CardsList";
@@ -11,7 +10,7 @@ import "./style.scss";
 interface ListOfAuthorsProps {
   authors: Author[];
 }
-export const ListOfAuthors: FC<ListOfAuthorsProps> = withLazyLoad(({ authors }) => {
+export const ListOfAuthors: FC<ListOfAuthorsProps> = ({ authors }) => {
   const t = useTranslations("home.listOfAuthors");
 
   return (
@@ -20,4 +19,4 @@ export const ListOfAuthors: FC<ListOfAuthorsProps> = withLazyLoad(({ authors }) 
       <CardsList cards={authors} />
     </section>
   );
-});
+};

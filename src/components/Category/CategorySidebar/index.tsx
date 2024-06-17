@@ -13,7 +13,6 @@ import styles from "./styles.module.scss";
 
 export const CategorySidebar: FC = () => {
   const { replace } = useRouter();
-
   const searchParams = useSearchParams();
   const { changeSearchParams } = useChangeSearchParams(searchParams);
   const [isHintsOpen, setIsHintsOpen] = useState(false);
