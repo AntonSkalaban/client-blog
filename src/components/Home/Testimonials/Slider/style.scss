@@ -3,22 +3,45 @@
 
 
 .slider {
-    width: 597px;
+    width: 628px;
     height: 320px;
     @include slider;
+    box-sizing: border-box;
+    position: relative;
+ 
+    // border-left: 1px solid red;
 
+  
+    
+       
    &__slides-wrapper {
-    height: 100%;
+    width: 300%;
     @include sledersWrapper;
+    height: 100%;
    }
 
    &__control-container {
     position: absolute;
     bottom: 0;
     right: 0;
-
     display: flex;
     gap: 24px;
+
+    // @include breakpoint(xl) {
+    //     right: 96px;
+    // }
+
+
+
+    // @include breakpoint(l) {
+    //     right: 40px;
+    //     // width: calc(628px + 96px);
+    //     // height: 260px;
+    //     // margin-top: 20px;
+    //        // border-top: 1px solid red;
+    //        // border-left: 0;
+    //    }
+       
    }
 
     &__btn {
@@ -31,4 +54,47 @@
             background-color: $color-dark-blue;
         }
     }
+
+
+    @include breakpoint(xl) {
+        width: 100%;
+    max-width: 700px;
+    //  width: calc(628px + 96px);
+     height: 260px;
+     margin-top: 20px;
+        // border-top: 1px solid red;
+        // border-left: 0;
+        &__control-container {
+            right: 96px;
+        }
+    }
+
+    @include breakpoint(l) {
+        // width: calc(628px - 96px + 80px);
+        height: 260px;
+        margin-top: 20px;
+           // border-top: 1px solid red;
+           // border-left: 0;
+
+           &__control-container {
+            right: 40px;
+        }
+
+       }
+
+       @include breakpoint(m) {
+        width: 100%;
+        height: 200px;
+
+        &__control-container {
+            right: 20px;
+        }
+    }
+
+    @include breakpoint(s) {
+        &__btn {
+            width: 35px;
+            height: 35px;
+    }
+}
 }

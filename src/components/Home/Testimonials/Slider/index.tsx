@@ -21,24 +21,26 @@ const Slider: FC = () => {
   };
 
   return (
-    <div className="slider" ref={sliderRef}>
-      <div
-        className="slider__slides-wrapper"
-        style={{ transform: `translate(${openSlideStyle}px)` }}
-      >
-        {slidesData.map(({ id, title }) => (
-          <Slide key={id} title={title} />
-        ))}
+    <>
+      <div className="slider" ref={sliderRef}>
+        <div
+          className="slider__slides-wrapper"
+          style={{ transform: `translate(${openSlideStyle}px)` }}
+        >
+          {slidesData.map(({ id, title }) => (
+            <Slide key={id} title={title} />
+          ))}
+        </div>
+        <div className="slider__control-container">
+          <button className="slider__btn" onClick={hanldePrevClick} disabled={isFirstSlide}>
+            {"<"}
+          </button>
+          <button className="slider__btn" onClick={hanldeNextClick} disabled={isLastSlide}>
+            {">"}
+          </button>
+        </div>
       </div>
-      <div className="slider__control-container">
-        <button className="slider__btn" onClick={hanldePrevClick} disabled={isFirstSlide}>
-          {"<"}
-        </button>
-        <button className="slider__btn" onClick={hanldeNextClick} disabled={isLastSlide}>
-          {">"}
-        </button>
-      </div>
-    </div>
+    </>
   );
 };
 

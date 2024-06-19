@@ -2,13 +2,16 @@
 @import 'assets/styles/mixins';
 
 .mission-vision {
-    // height: 441px;
     background-color: $color-light-pink;
     margin-top: -64px;
 
     @include flexBetween;
 
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
     padding: 128px 108px 64px 128px;
 
     &__block {
@@ -28,4 +31,20 @@
         margin-top: 24px;
         color: $color-grey;
     }
+
+    @include breakpoint(xl) {
+        flex-direction: column;
+        gap: 16px;
+        padding: 80px 80px 64px 80px;
+        
+        &__block {
+            width: 100%;
+        }
+    }
+
+    @include breakpoint(m) {
+        padding: 20px 80px 64px 20px;
+     
+    }
+
 }

@@ -20,16 +20,16 @@ const AuthorCard: FC<AuthorCardProps> = ({ card }) => {
   return (
     <article className="author-card" onClick={handleClick}>
       <div className="author-card__img-container">
-        <Image src={image} alt="author-avatar" />
+        <Image className="author-card__img" src={image} alt="author-avatar" />
       </div>
-      <div>
-        <h3>{name}</h3>
+      <div className="author-card__content-container">
+        <h3 className="author-card__title">{name}</h3>
         <p className="text-normal author-card__text">
           {profession} @{company}
         </p>
-      </div>
 
-      <MediaList links={contacts} />
+        <MediaList links={contacts} />
+      </div>
     </article>
   );
 };

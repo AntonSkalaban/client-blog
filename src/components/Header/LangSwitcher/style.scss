@@ -5,7 +5,28 @@
 .lang-switcher{
     position: relative;
 
+    &__select-container {
+
+        display: none;
+        @include breakpoint(l) {
+            height: 30px;
+            display: flex;
+            gap: 10px;
+
+            svg {
+                width: 32px;
+                height: 32px;
+            }
+
+           }
+    
+    }
+
+    &__select {
+        width: 50px;
+    }
     &__btn {
+
        @include flexBetween;
        flex-direction: column;
         gap: 8px;
@@ -22,6 +43,10 @@
         svg {
             stroke: $color-yellow;
         }
+       }
+
+       @include breakpoint(l) {
+        display: none;
        }
     }
 

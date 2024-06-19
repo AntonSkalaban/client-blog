@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { ChangeEvent, FC, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
 
@@ -20,8 +20,23 @@ export const LangSwitcher: FC = () => {
     router.replace(pathname.replace(localActive, lang));
   };
 
+  const handleLangChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    router.replace(pathname.replace(localActive, e.target.value));
+  };
+
   return (
     <div className="lang-switcher">
+      <div className="lang-switcher__select-container">
+        <Globe />
+        <select className="lang-switcher__select" value={localActive} onChange={handleLangChange}>
+          {locales.map((lang) => (
+            <option key={lang} value={lang}>
+              {lang.toLocaleUpperCase()}
+            </option>
+          ))}
+        </select>
+      </div>
+
       <button className="lang-switcher__btn" onClick={handleToggle}>
         <Globe />
         <p>{localActive.toLocaleUpperCase()}</p>

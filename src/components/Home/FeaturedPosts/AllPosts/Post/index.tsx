@@ -18,7 +18,7 @@ const Post: FC<PostProps> = ({ post, activePostId, onClick }) => {
       <div className={styles.post__content}>
         <AuthorAndDate author={author} date={date} />
 
-        <h4>{title}</h4>
+        <h4 className={styles.post__title}>{title}</h4>
       </div>
     </article>
   );

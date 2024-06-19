@@ -1,5 +1,11 @@
+@import 'assets/styles/mixins';
+
 .category-page {
     display: flex;
     justify-content: space-between;
     position: relative;
+
+    @include breakpoint(xl) {
+        flex-direction: column-reverse;
+    }
 }

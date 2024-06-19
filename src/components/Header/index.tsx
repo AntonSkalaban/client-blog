@@ -2,6 +2,7 @@
 import { FC, useState } from "react";
 
 import { Modal, Nav, Wrapper } from "components";
+import { BurgerMenu } from "components/BurgerMenu";
 
 import { LangSwitcher } from "./LangSwitcher";
 import { Video } from "./Video";
@@ -24,6 +25,15 @@ export const Header: FC = () => {
       <Wrapper>
         <div className="header__container">
           <h1 className="logo">Modsen Client Blog</h1>
+
+          <BurgerMenu>
+            <LangSwitcher />
+            <Nav />
+            <button className="header__button" onClick={hanldeOpenModal}>
+              Video about us
+            </button>
+          </BurgerMenu>
+
           <div className="header__menu-container">
             <Nav />
             <button className="header__button" onClick={hanldeOpenModal}>

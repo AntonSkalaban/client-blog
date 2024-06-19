@@ -1,6 +1,8 @@
 @import 'assets/styles/colors';
+@import 'assets/styles/mixins';
 
 .contact-info {
+    box-sizing: border-box;
     background-color: $color-purple;
     margin-top: 64px;
 
@@ -25,5 +27,16 @@
 
     &__text {
         color: $color-grey;
+    }
+
+    @include breakpoint(l) {
+        flex-direction: column;
+        gap: 20px;
+
+        padding: 24px 32px;
+
+        &__block {
+            width: 100%;
+        }
     }
 }

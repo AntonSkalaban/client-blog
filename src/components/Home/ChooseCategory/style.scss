@@ -7,7 +7,7 @@
         text-align: center;
     }
 
-    @include breakpoint(lg) {
+    @include breakpoint(xl) {
     
         display: flex;
         flex-direction: column;

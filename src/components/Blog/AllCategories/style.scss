@@ -1,6 +1,17 @@
+@import 'assets/styles/mixins';
+
 .all-categories {
     margin-top: 64px;
     &__title {
         text-align: left;
+    }
+
+    @include breakpoint(l) {
+        @include flexCenter;
+        flex-direction: column;
+        gap: 40px;
+        &__title {
+            text-align: center;
+        }
     }
 }

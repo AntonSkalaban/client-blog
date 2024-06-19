@@ -11,6 +11,10 @@
         margin-top: 2px;
     }
 
+    &__img {
+        border-radius: 50%;
+    }
+
     &__title {
         color: $color-purple;
     }

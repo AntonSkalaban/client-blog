@@ -1,24 +1,53 @@
 @import 'assets/styles/colors';
+@import 'assets/styles/mixins';
 
 .post {
     width: 100%;
-    min-width: 420px;
-    height: 181px;
+    //min-width: 420px;
+    height: 25%;
 
     box-sizing: border-box;
-    padding-top: 32px;
-    padding-left: 32px;
-    padding-bottom: 25px;
 
+    padding: 32px 20px 25px 32px;
     cursor: pointer;
+
+
+    @include breakpoint(l) {
+        padding: 15px 10px 15px 10px;
+        height: 176px;
+        }
+
+        @include breakpoint(m) {
+            height: 100px;
+        }
+    
 
     &_active, &:hover {
         background-color: $color-yellow-light;
     }
 
     &__content {
-        width: 370px;
+        max-width: 370px;
+        width: 100%;
+
+        @include breakpoint(m) {
+            max-width: 470px;
+        }
     }
+    
+    &__title {
+        // @include breakpoint(xl) {
+        //     font-size: 22px;
+        // }
+
+        // @include breakpoint(l) {
+        //     font-size: 20px;
+        //     line-height: 24px;
+        // }
+
+    }
+
+
 }
 
 

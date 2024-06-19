@@ -9,7 +9,7 @@ export const AuthorInfo: FC = () => {
   return (
     <div className={styles["author-info"]}>
       <div className={styles["author-info__img-container"]}>
-        <Image src={AuthorImage} alt="author-img" />
+        <Image className={styles["author-info__img"]} src={AuthorImage} alt="author-img" />
       </div>
       <div>
         <h3 className={styles["author-info__title"]}>Andrew Jonson</h3>

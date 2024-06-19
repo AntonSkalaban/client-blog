@@ -12,7 +12,7 @@ export const Overview: FC = () => {
     <section className={styles.overview}>
       <div className={styles.overview__info}>
         {overviewData.map(({ name, value }) => (
-          <div key={name[localActive]}>
+          <div className={styles.overview__info_cell} key={name[localActive]}>
             <p className="display">{numToStringWithK(value)}</p>
             <p className="text-big">{name[localActive]}</p>
           </div>

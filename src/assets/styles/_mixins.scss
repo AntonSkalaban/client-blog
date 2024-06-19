@@ -2,16 +2,20 @@
 @import './breakpoints';
 
 @mixin breakpoint($point) {
-    @if ($point == lg) {
-      @media (max-width: $lg) {
+    @if ($point == xl) {
+      @media (max-width: $xl) {
         @content;
       }
-    } @else if ($point == md) {
-      @media (max-width: $md) {
+    } @else if ($point == l) {
+      @media (max-width: $l) {
         @content;
       }
-    } @else if ($point == sm) {
-      @media (max-width: $sm) {
+    } @else if ($point == m) {
+      @media (max-width: $m) {
+        @content;
+      }
+    } @else if ($point == s) {
+      @media (max-width: $s) {
         @content;
       }
     }
@@ -26,6 +30,16 @@
     &:hover {
         opacity: 0.8;
     }
+
+    @include breakpoint(m) {
+      font-weight: 600;
+      padding: 14px 40px;
+  }
+
+  @include breakpoint(s) {
+    font-weight: 600;
+    padding: 10px 14px;
+}
 }
 
 @mixin  buttonYellow {

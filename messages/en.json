@@ -69,13 +69,18 @@
         "stepByStep": {
             "cap": "Featured Post",
             "title": "Step-by-step guide to choosing great font pairs",
-            "info": {
-                "start": "By",
-                "name": "James West",
-                "date": "May 23 2022 г."
-            },
+            "info": "Author {author} {date}",
             "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "button": "Read More"
         }
+    },
+    "aboutUs": {
+        "header": {
+            "cap": "about us",
+            "title": "We are a team of content writers who share their learnings",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        }
+      
+
     }
 }

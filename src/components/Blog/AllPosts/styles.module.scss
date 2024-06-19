@@ -12,15 +12,29 @@
 }
 
 .slider {
-    width: 1012px;
+    max-width: 1012px;
+
     height: 1900px;
+
     @include slider;
 
     &__sliders-wrapper {
         @include sledersWrapper;
+        width: 100%;
     }
 
+    &__slide {
+        width: 100%;
+    }
 
+    @include breakpoint(m) {
+        height: 1100px;
+    }
+
+    @include breakpoint(s) {
+        height: 800px;
+    }
+       
 }
 
 .controls {
@@ -35,4 +49,9 @@
         line-height: 40px;
         letter-spacing: -1px;
     }
+
+    @include breakpoint(m) {
+        margin-top: 34px;
+    }
+
 }

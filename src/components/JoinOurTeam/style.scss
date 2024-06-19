@@ -2,7 +2,7 @@
 @import 'assets/styles/mixins';
 
 .join-our-team {
-    width: 414px;
+    max-width: 414px;
 
     @include flexCenter;
     flex-direction: column;
@@ -19,4 +19,6 @@
         margin-top: 16px;
         margin-bottom: 32px;
     }
+
+   
 }

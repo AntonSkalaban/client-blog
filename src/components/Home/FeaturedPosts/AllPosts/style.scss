@@ -1,5 +1,13 @@
+@import 'assets/styles/mixins';
+
 .all-posts {
    width: 100%;
    // max-width: 517px;
-   height: 724px;
+    height: 724px;
+   // height: 100%;
+
+   @include breakpoint(m) {
+      height: fit-content;
+  }
+ 
 }

@@ -2,17 +2,44 @@
 @import 'assets/styles/mixins';
 
 .testimonials {
-    height: 310px;
+    width: 100%;
+    box-sizing: border-box;
+    // height: 464px;
 
     display: flex;
+    // align-items: center;
+    justify-content: center;
   
     background-color: $color-yellow-light;
-    padding: 92px 112px;
+    padding: 92px 0;
     margin-top: 96px;
+
+      @include breakpoint(xl) {
+        margin-top: 400px;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px ;
+     }
+
+
+     @include breakpoint(m) {
+      margin-top: 440px;
+     }
 
     &__static {
         width: 349px;
-        // padding-right: 80px;
+        padding-right: 80px;
+        border-right: 1px solid red;
+
+      @include breakpoint(xl) {
+        width: 100%;
+        max-width: 700px;
+      
+        padding-bottom: 20px;
+        padding-right: 0;
+        border-right: 0;
+        border-bottom: 1px solid red;
+     }
     }
 
     &__title {

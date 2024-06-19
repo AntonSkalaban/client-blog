@@ -1,4 +1,5 @@
 @import 'assets/styles/colors';
+@import 'assets/styles/mixins';
 
 .tags {
 
@@ -18,6 +19,13 @@
 
         margin-top: 24px;
     }
+
+    @include breakpoint(l) {
+        &__tags-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
 }
 
 .tag {
@@ -35,5 +43,11 @@
         background-color:  $color-black;
         color: $color-white;
     }
+
+    @include breakpoint(s) {
+        padding: 6px 25px;
+        justify-content: center;
+    }
+
 }
 

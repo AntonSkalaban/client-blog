@@ -26,6 +26,21 @@
 
     .footer__text {
         opacity: 0.5;
+
     }
 
+    @include breakpoint(l) {
+
+        height: fit-content;
+
+        .nav {
+            display: none;
+        }
+
+        
+        &__container {
+            gap:20px;
+        }
+    }
+       
 }

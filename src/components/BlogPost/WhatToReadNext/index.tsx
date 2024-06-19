@@ -2,7 +2,7 @@ import { FC } from "react";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 
-import { blogBosts } from "constants/index";
+import { authors, blogBosts } from "constants/index";
 import { BlogPost } from "types";
 
 import styles from "./styles.module.scss";
@@ -20,7 +20,7 @@ export const Card: FC<CardProps> = ({ post }) => {
         <Image src={post.img} alt="post-img" />
       </div>
       <p className={styles.card__label}>
-        {post.author}|{post.date}
+        {authors.find(({ id }) => id === post.authorId)?.name}|{post.date}
       </p>
       <h3 className={styles.card__title}>{post.title[localActive]}</h3>
       <p className={`text-big ${styles.card__text}`}>{post.text[localActive]}</p>

@@ -1,5 +1,7 @@
+@import 'assets/styles/mixins';
+
 .blog-post-header {
-    width: 768px;
+    max-width: 843px;
     margin: 24px auto 0 auto;
 
     &__title {
@@ -11,4 +13,24 @@
         gap: 8px;
         margin-top: 34px;
     }
+
+
+    @include breakpoint(l) {
+        margin: 20px auto 0 auto;
+
+        &__title {
+            margin-top: 14px;
+        }
+
+        &__category {
+            margin-top: 24px;
+        }
+      }
+
+      @include breakpoint(m) {
+        &__category {
+            margin-top: 14px;
+        }
+      }
+
 }

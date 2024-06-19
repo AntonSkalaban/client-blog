@@ -1,0 +1,106 @@
+@import 'assets/styles/colors';
+@import 'assets/styles/mixins';
+
+.burger-menu {
+    // width: 100%;
+    display: none;
+    justify-content: end;
+
+    @include breakpoint(l) {
+ 
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+        }
+
+        &__icon {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            position: relative;
+            z-index: 400;
+
+            span {
+               background-color: $color-white;
+                height: 2px;
+                position: absolute;
+                width: 100%;
+                left: 0;
+                transition: all 0.3s ease;
+                border-radius: 10px;
+              }
+            
+              & span:first-child {
+                top: 0;
+                transform: rotate(0);
+              }
+            
+              & span:nth-child(2) {
+                top: 6px;
+                opacity: 1;
+              }
+            
+              & span:last-child {
+                top: 12px;
+                transform: rotate(0);
+              }
+          
+              &_active {
+                position: fixed;
+                span {
+                    background: $color-white;
+                    
+                  }
+                  & span:first-child {
+                    top:  6px ;
+                    transform: rotate(45deg); 
+                  }
+
+                  & span:nth-child(2) {
+                    top: 6px;
+                    opacity: 0;
+                  }
+
+                  & span:last-child {
+                    top: 6px;
+                    transform: rotate(-45deg);
+                  }
+
+                  & span:first-child,
+              & span:last-child {
+                background-color: red;
+              }
+              
+              }
+        }
+
+        &__content {
+            width: 0;
+            height: 100vh;
+          position: fixed;
+          display: flex;
+          flex-direction: column;
+        //   align-items: ;
+          
+        background-color: $color-dark-blue;
+          
+            transform: translateX(100vw);
+          
+            z-index: 399;
+          
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            transition: transform 0.3s ease-in-out;
+
+            &_active {
+                width: fit-content;
+                transform: translateX(0);
+            }
+        }
+}
+
+
+
+

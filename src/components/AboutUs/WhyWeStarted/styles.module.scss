@@ -34,4 +34,33 @@
         background: $color-purple;
         border-radius: 50%;
     }
+
+    @include breakpoint(xl) {
+        height: fit-content;
+        flex-direction: column-reverse;
+        gap: 20px;
+
+        &__img-block {
+            width: 508px;    
+        }
+
+        &__decor {
+            left: 50%;
+            top: -53px;
+            transform: scale(0.6) rotate(-90deg);
+        }
+    } 
+
+    @include breakpoint(m) {
+        &__text-block {
+            width: 100%;
+            max-width: 519px;
+        }
+
+        &__img-block {
+            width: 100%;
+            max-width: 508px; 
+        }
+    }
+
 }

@@ -5,7 +5,8 @@
     margin-top: 128px;
     height: 480px;
     @include flexBetween;
-    position: relative;
+    gap: 10px;
+
 
     &__text-block {
         width: 519px;
@@ -22,16 +23,47 @@
     &__img-block {
         width: 50%;
         height: 100%;
+        position: relative;
     }
 
     &__decor {
         width: 103px;
         height: 116px;
         position: absolute;
-        left: calc(50% - 52px);
+        left: -52px;
         bottom: 50%;
         
         background: $color-yellow;
         border-top-left-radius: 40px;
     }
+
+    @include breakpoint(xl) {
+        height: fit-content;
+        flex-direction: column;
+        gap: 20px;
+
+        &__img-block {
+            width: 508px;
+            
+        }
+
+        &__decor {
+            left: 50%;
+            top: -53px;
+            transform: scale(0.6) rotate(-90deg);
+        }
+    } 
+
+    @include breakpoint(m) {
+        &__text-block {
+            width: 100%;
+            max-width: 519px;
+        }
+
+        &__img-block {
+            width: 100%;
+            max-width: 508px; 
+        }
+    }
+    
 }

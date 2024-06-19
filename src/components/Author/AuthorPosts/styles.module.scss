@@ -1,10 +1,20 @@
+@import 'assets/styles/mixins';
+
 .author-posts {
-    margin-top: 128px;
-    margin-bottom: 128px;
+    margin: 128px 0;
     
     &__wrapper {
-        width: 1024px;
+        max-width: 1024px;
+        padding: 0 20px;
         height: 100%;
         margin: 0 auto;
+    }
+
+    @include breakpoint(l) {
+        margin: 100px 0;
+    }
+
+    @include breakpoint(m) {
+        margin: 40px 0;
     }
 }

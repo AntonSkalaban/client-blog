@@ -5,25 +5,68 @@
     width: 100%;
     height: 256px;
     background-color: $color-light-blue;
+    box-sizing: border-box;
   
 
     @include flexCenter;
     gap: 64px;
 
-    &__title {
-        width: 562px;
+    padding: 0 20px;
+
+    @include breakpoint(xl) {
+        flex-direction: column;
+        gap: 30px;
+
+       }
+
+       @include breakpoint(m) {
+        height: fit-content;
+        padding: 20px;
+       }
+
+        &__title {
+        max-width: 562px;
         color: $color-white;
+
+
+        @include breakpoint(xl) {
+            text-align: center;
+           }
+
+
+    @include breakpoint(xl) {
+       font-size: 26px;
+
+       }
+
+
+
+//  @include breakpoint(l) {
+//         font-size: 23px;
+//         // line-height: 60px;
+//     }
     }
 
     &__form {
         display: flex;
         gap: 24px;
+        box-sizing: border-box;
+
+        @include breakpoint(m) {
+            flex-direction: column;
+        }
     }
 
     &__input-container {
         width: 324px;
         height: 56px;
         position: relative;
+
+
+    @include breakpoint(m) {
+        width: 260px;
+        height: 40px;
+    }
     }
     
     &__email {
@@ -39,9 +82,19 @@
         outline: none;
     }
 
-    &__input-error {
-        position: absolute;
-        top: 100%;
+    &__btn {
+        height: 100%;
+
+        @include breakpoint(m) {
+            height: 40px;
+        }
+       
     }
+    // &__input-error {
+    //     position: absolute;
+    //     top: 100%;
+    // }
+
+  
 }
 

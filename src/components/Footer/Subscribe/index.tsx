@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { yupResolver } from "@hookform/resolvers/yup";
 
 import { Alert } from "components";
+import { FormInput } from "components/Contact/ContactForm/FormInputs/FormInput";
 
 import { getShema, sandEmail } from "./helpers";
 import { FormValue } from "./types";
@@ -39,18 +40,15 @@ export const Subscribe: FC = () => {
         <h2 className="subscribe__title">{t("title")}</h2>
         <form className="subscribe__form" ref={form} onSubmit={handleSubmit(onSubmit)}>
           <div className="text-normal subscribe__input-container">
-            <input
+            <FormInput
               className="subscribe__email"
-              type="text"
               placeholder={t("email")}
+              error={errors.email?.message}
               {...register("email")}
             />
-            {errors.email && (
-              <p className="text-normal error subscribe__input-error">{errors.email.message}</p>
-            )}
           </div>
 
-          <button className="button-yellow">{t("button")}</button>
+          <button className="button-yellow subscribe__btn">{t("button")}</button>
         </form>
       </section>
     </>
