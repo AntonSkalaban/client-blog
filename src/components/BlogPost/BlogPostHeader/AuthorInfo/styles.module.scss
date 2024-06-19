@@ -1,4 +1,5 @@
 @import 'assets/styles/colors';
+@import 'assets/styles/mixins';
 
 .author-info {
     display: flex;
@@ -22,4 +23,10 @@
     &__text {
         color: $color-grey;
     }
+
+
+    @include breakpoint(l) {
+        margin-top: 24px;
+      }
+      
 }

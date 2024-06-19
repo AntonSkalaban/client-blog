@@ -5,7 +5,7 @@ import { useLocale } from "next-intl";
 
 import { pagesPathEnam } from "types";
 
-import { useRouter } from "../../navigation";
+import { useRouter } from "../../../navigation";
 import { PostProps } from "./types";
 
 import "./styles.scss";

@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { Post } from "components/Post";
+import { Post } from "components";
 import { BlogPost } from "types/blogPost";
 
 import styles from "./styles.module.scss";

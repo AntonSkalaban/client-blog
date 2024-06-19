@@ -1,9 +1,9 @@
 import { FC } from "react";
 import { useLocale } from "next-intl";
 
-import { usePathname } from "navigation";
 import { pagesPathEnam } from "types/pages";
 
+import { usePathname } from "../../../../navigation";
 import { CategoryCardProps } from "./types";
 import styles from "./styles.module.scss";
 

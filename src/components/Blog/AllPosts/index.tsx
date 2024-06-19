@@ -1,7 +1,7 @@
 "use client";
 import { FC, useMemo } from "react";
 
-import { Post } from "components/Post";
+import { Post } from "components";
 import { useSlider } from "hooks";
 import { blogBosts } from "constants/index";
 import { chunkArray } from "utils";

@@ -3,7 +3,7 @@ import Economy from "assets/images/svg/economy.svg";
 import Startup from "assets/images/svg/startup.svg";
 import Technology from "assets/images/svg/technology.svg";
 
-import { Category } from "../components/CategoryCards/types";
+import { Category } from "../components/UI/CategoryCards/types";
 
 export const categories: Category[] = [
   {

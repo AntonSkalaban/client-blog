@@ -4,7 +4,7 @@ import Image from "next/image";
 import { MediaList } from "components";
 import { pagesPathEnam } from "types/pages";
 
-import { useRouter } from "../../../../navigation";
+import { useRouter } from "../../../../../navigation";
 import { AuthorCardProps } from "./types";
 import "./style.scss";
 
