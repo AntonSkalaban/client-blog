@@ -12,6 +12,7 @@ const Post: FC<PostProps> = ({ post, activePostId, onClick }) => {
 
   return (
     <article
+      data-testid={`post-${id}`}
       className={`${styles.post} ${isActive ? styles.post_active : ""}`}
       onClick={hanldeClick}
     >

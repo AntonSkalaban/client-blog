@@ -1,14 +1,10 @@
 import { FC } from "react";
 
-import { Author } from "types";
-
-import AuthorCard from "./AuthorCard";
+import { AuthorCard } from "./AuthorCard";
+import { CardsListProps } from "./types";
 import "./style.scss";
 
-interface CardsListProps {
-  cards: Author[];
-}
-const CardsList: FC<CardsListProps> = ({ cards }) => {
+export const CardsList: FC<CardsListProps> = ({ cards }) => {
   return (
     <div className="authors-cards-list">
       {cards.map((card) => (
@@ -17,5 +13,3 @@ const CardsList: FC<CardsListProps> = ({ cards }) => {
     </div>
   );
 };
-
-export default CardsList;

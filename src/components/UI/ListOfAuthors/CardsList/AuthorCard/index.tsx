@@ -8,7 +8,7 @@ import { useRouter } from "../../../../../navigation";
 import { AuthorCardProps } from "./types";
 import "./style.scss";
 
-const AuthorCard: FC<AuthorCardProps> = ({ card }) => {
+export const AuthorCard: FC<AuthorCardProps> = ({ card }) => {
   const router = useRouter();
 
   const { id, image, name, profession, company, contacts } = card;
@@ -33,5 +33,3 @@ const AuthorCard: FC<AuthorCardProps> = ({ card }) => {
     </article>
   );
 };
-
-export default AuthorCard;

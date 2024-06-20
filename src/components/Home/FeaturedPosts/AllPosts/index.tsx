@@ -6,7 +6,7 @@ import "./style.scss";
 
 export const AllPosts: FC<AllPostsProps> = ({ posts, activePostId, onClick }) => {
   return (
-    <section className="all-posts">
+    <section className="all-posts" data-testid="all-posts">
       {posts.map((post) => (
         <Post key={post.id} post={post} onClick={onClick} activePostId={activePostId} />
       ))}

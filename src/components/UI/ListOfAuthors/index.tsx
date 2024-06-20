@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 
 import { Author } from "types";
 
-import CardsList from "./CardsList";
+import { CardsList } from "./CardsList";
 import "./style.scss";
 
 interface ListOfAuthorsProps {
