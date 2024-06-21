@@ -7,7 +7,7 @@ import WeStarted from "assets/images/png/why-we-started.png";
 import styles from "./styles.module.scss";
 
 export const WhyWeStarted: FC = () => {
-  const t = useTranslations("aboutUs.whyWeStarted");
+  const t = useTranslations("aboutUs.missionVision");
 
   return (
     <section className={styles["why-we-started"]}>

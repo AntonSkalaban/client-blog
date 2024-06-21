@@ -1,12 +1,20 @@
+"use client";
 import { FC } from "react";
 import { useTranslations } from "next-intl";
 
 import { Wrapper } from "components";
+import { pagesPathEnam } from "types/index";
 
+import { useRouter } from "../../../navigation";
 import "./style.scss";
 
 export const HomeHeader: FC = () => {
   const t = useTranslations("home.stepByStep");
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(`/${pagesPathEnam.Blog}`);
+  };
 
   return (
     <section className="home-header">
@@ -23,7 +31,7 @@ export const HomeHeader: FC = () => {
               | {t("info.date")}
             </p>
             <p className="text-normal home-header__text">{t("text")}</p>
-            <button className="button-yellow home-header__btn">
+            <button className="button-yellow home-header__btn" onClick={handleClick}>
               {t("button")} {">"}
             </button>
           </div>

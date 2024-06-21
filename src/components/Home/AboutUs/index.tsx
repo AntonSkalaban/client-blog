@@ -1,9 +1,10 @@
 "use client";
 import { FC } from "react";
-import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-// import { withLazyLoad } from "hoc";
+import { pagesPathEnam } from "types/pages";
+
+import { Link } from "../../../navigation";
 import "./style.scss";
 
 export const AboutUs: FC = () => {
@@ -19,7 +20,7 @@ export const AboutUs: FC = () => {
         <p className="cap about-us__cap">{t("aboutUs.cap")}</p>
         <h2 className="about-us__title">{t("aboutUs.title")}</h2>
         <p className="text-big about-us__text">{t("aboutUs.text")}</p>
-        <Link href={""}>
+        <Link href={`/${pagesPathEnam.AnoutUs}`}>
           {t("aboutUs.link")} {">"}
         </Link>
       </div>

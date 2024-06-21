@@ -5,8 +5,12 @@ jest.mock("next-intl", () => ({
   useTranslations: jest.fn().mockReturnValue((key: string) => `Mocked ${key}`),
 }));
 
+jest.mock("../../src/navigation", () => ({
+  useRouter: () => ({}),
+}));
+
 jest.mock("react-map-gl/maplibre", () => ({
-  Map: () => ({}),
+  useRouter: () => ({}),
 }));
 
 describe("FeaturePosts", () => {

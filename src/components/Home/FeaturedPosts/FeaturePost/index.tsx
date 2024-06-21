@@ -1,16 +1,23 @@
 "use client";
-
 import { FC } from "react";
 import { useTranslations } from "next-intl";
 
+import { pagesPathEnam } from "types/index";
+
+import { useRouter } from "../../../../navigation";
 import AuthorAndDate from "../AuthorAndDate";
 import { FeaturePostProps } from "./types";
 import "./style.scss";
 
 export const FeaturePost: FC<FeaturePostProps> = ({ post }) => {
+  const router = useRouter();
   const t = useTranslations("home.featurePosts");
 
   const { id, image, author, date, title, text } = post;
+
+  const handleClick = () => {
+    router.push(`/${pagesPathEnam.Blog}/${id}`);
+  };
 
   return (
     <div className="feature-post" data-testid="feature-post">
@@ -23,7 +30,7 @@ export const FeaturePost: FC<FeaturePostProps> = ({ post }) => {
         {title}
       </h3>
       <p className="text-big feature-post__text">{text}</p>
-      <button className="button-yellow">
+      <button className="button-yellow" onClick={handleClick} data-testid="feature-post-btn">
         {t("featurePost.button")}
         {">"}
       </button>
