@@ -1,6 +1,6 @@
 "use client";
 import { FC, useRef, useState } from "react";
-import { Controller, useForm } from "react-hook-form";
+import { Control, useForm } from "react-hook-form";
 import { useLocale } from "next-intl";
 import { yupResolver } from "@hookform/resolvers/yup";
 
@@ -54,29 +54,45 @@ export const ContactForm: FC = () => {
   return (
     <>
       {isAlertOpen && <Alert message={successMessage || errorMessage} />}
-      <form className={styled.form} ref={formRef} onSubmit={handleSubmit(onSubmit)}>
-        <FormInput {...register("name")} error={errors.name?.message} placeholder="Full name" />
-        <FormInput {...register("email")} error={errors.email?.message} placeholder="Your email" />
+      <form
+        className={styled.form}
+        ref={formRef}
+        onSubmit={handleSubmit(onSubmit)}
+        data-testid="form"
+      >
+        <FormInput
+          {...register("name")}
+          error={errors.name?.message}
+          placeholder="Full name"
+          data-testid="name-input"
+        />
+        <FormInput
+          {...register("email")}
+          error={errors.email?.message}
+          placeholder="Your email"
+          data-testid="email-input"
+        />
 
-        <Controller
-          control={control}
+        <FormSelect
           name="query"
-          render={({ field, formState: { errors } }) => (
-            <FormSelect
-              options={options}
-              onChange={(value: string) => field.onChange(value)}
-              title={query || "Query Related"}
-              error={errors.query?.message}
-            />
-          )}
+          options={options}
+          control={control as unknown as Control<{ [key: string]: string }>}
+          title={query || "Query Related"}
+          error={errors.query?.message}
+          data-testid="query-input"
         />
 
         <FormTextArea
           {...register("message")}
           error={errors.message?.message}
           placeholder="Message"
+          data-testid="messge-input"
         />
-        <button className={`button-yellow ${styled["form__btn"]}`} disabled={isFetching}>
+        <button
+          className={`button-yellow ${styled["form__btn"]}`}
+          data-testid="contanc-form-btn"
+          disabled={isFetching}
+        >
           {isFetching ? "Fetching..." : "Send Message"}
         </button>
       </form>
