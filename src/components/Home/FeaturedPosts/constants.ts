@@ -7,8 +7,14 @@ export const posts: Post[] = [
       "https://images.pexels.com/photos/1838640/pexels-photo-1838640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     author: "Anton Skalaban",
     date: new Date(1999, 10, 10).toLocaleDateString(),
-    title: "1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    title: {
+      en: "1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      ru: "1Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском",
+    },
+    text: {
+      en: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      ru: "Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском",
+    },
   },
   {
     id: 2,
@@ -16,8 +22,14 @@ export const posts: Post[] = [
       "https://images.pexels.com/photos/1838640/pexels-photo-1838640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     author: "Jon Done",
     date: new Date(1999, 10, 10).toLocaleDateString(),
-    title: "2Lorem Figma design systems that you can download for free today.",
-    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    title: {
+      en: "2Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      ru: "2Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском",
+    },
+    text: {
+      en: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      ru: "Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском",
+    },
   },
   {
     id: 3,
@@ -25,8 +37,14 @@ export const posts: Post[] = [
       "https://images.pexels.com/photos/1838640/pexels-photo-1838640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     author: "Anton Skalaban",
     date: new Date(1999, 10, 10).toLocaleDateString(),
-    title: "3Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    title: {
+      en: "3Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      ru: "3Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском",
+    },
+    text: {
+      en: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      ru: "Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском",
+    },
   },
   {
     id: 4,
@@ -34,8 +52,14 @@ export const posts: Post[] = [
       "https://images.pexels.com/photos/1838640/pexels-photo-1838640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     author: "Jon Done",
     date: new Date(1999, 10, 10).toLocaleDateString(),
-    title: "4Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    title: {
+      en: "4Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      ru: "4Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском",
+    },
+    text: {
+      en: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      ru: "Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском",
+    },
   },
   {
     id: 5,
@@ -43,8 +67,14 @@ export const posts: Post[] = [
       "https://images.pexels.com/photos/1838640/pexels-photo-1838640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     author: "Anton Skalaban",
     date: new Date(1999, 10, 10).toLocaleDateString(),
-    title: "5Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    title: {
+      en: "5Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      ru: "5Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском",
+    },
+    text: {
+      en: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      ru: "Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском",
+    },
   },
   {
     id: 6,
@@ -52,7 +82,13 @@ export const posts: Post[] = [
       "https://images.pexels.com/photos/1838640/pexels-photo-1838640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     author: "Jon Done",
     date: new Date(1999, 10, 10).toLocaleDateString(),
-    title: "6Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    title: {
+      en: "6Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      ru: "6Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском",
+    },
+    text: {
+      en: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      ru: "Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском Текс на руском",
+    },
   },
 ];

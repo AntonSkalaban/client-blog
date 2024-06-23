@@ -1,6 +1,6 @@
 "use client";
 import { FC } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 import { pagesPathEnam } from "types/index";
 
@@ -12,6 +12,7 @@ import "./style.scss";
 export const FeaturePost: FC<FeaturePostProps> = ({ post }) => {
   const router = useRouter();
   const t = useTranslations("home.featurePosts");
+  const localActive = useLocale() as "ru" | "en";
 
   const { id, image, author, date, title, text } = post;
 
@@ -27,9 +28,9 @@ export const FeaturePost: FC<FeaturePostProps> = ({ post }) => {
 
       <AuthorAndDate author={author} date={date} />
       <h3 className="feature-post__title" data-testid={`feature-post-titile-${id}`}>
-        {title}
+        {title[localActive]}
       </h3>
-      <p className="text-big feature-post__text">{text}</p>
+      <p className="text-big feature-post__text">{text[localActive]}</p>
       <button className="button-yellow" onClick={handleClick} data-testid="feature-post-btn">
         {t("featurePost.button")}
         {">"}
