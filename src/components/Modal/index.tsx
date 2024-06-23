@@ -10,7 +10,7 @@ export const Modal: FC<ModalProps> = ({ children, close }) => {
   return createPortal(
     <>
       <Overlay />
-      <div className="modal">
+      <div className="modal" data-testid="modal">
         <button className="modal__close-btn" onClick={close}>
           X
         </button>

@@ -5,6 +5,7 @@ import "./styled.scss";
 export const Video: FC = () => {
   return (
     <iframe
+      data-testid="video-frame"
       className="video"
       title="YouTube video player"
       src={`https://www.youtube.com/embed/zRp4NS_eeGc?autoplay=1&mute=0&loop=1&rel=0`}

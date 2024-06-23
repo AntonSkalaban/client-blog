@@ -17,7 +17,7 @@ export const HomeHeader: FC = () => {
   };
 
   return (
-    <section className="home-header">
+    <section className="home-header" data-testid="home-header">
       <div className="home-header__overlay" />
       <div className="home-header__container">
         <Wrapper>

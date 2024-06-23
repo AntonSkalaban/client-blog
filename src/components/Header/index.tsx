@@ -36,7 +36,7 @@ export const Header: FC = () => {
 
           <div className="header__menu-container">
             <Nav />
-            <button className="header__button" onClick={hanldeOpenModal}>
+            <button className="header__button" onClick={hanldeOpenModal} data-testid="header-btn">
               Video about us
             </button>
             <LangSwitcher />

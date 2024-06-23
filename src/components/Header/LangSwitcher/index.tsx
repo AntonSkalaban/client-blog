@@ -37,14 +37,20 @@ export const LangSwitcher: FC = () => {
         </select>
       </div>
 
-      <button className="lang-switcher__btn" onClick={handleToggle}>
+      <button className="lang-switcher__btn" data-testid="lang-btn" onClick={handleToggle}>
         <Globe />
         <p>{localActive.toLocaleUpperCase()}</p>
       </button>
+
       {isOpen && (
         <Dialog>
           {locales.map((lang) => (
-            <p className="text-big lang-switcher__text" key={lang} onClick={handleLangClick(lang)}>
+            <p
+              className="text-big lang-switcher__text"
+              key={lang}
+              onClick={handleLangClick(lang)}
+              data-testid={`locale-${lang}`}
+            >
               {lang.toLocaleUpperCase()}
             </p>
           ))}
