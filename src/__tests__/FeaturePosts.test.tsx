@@ -1,6 +1,11 @@
 import { fireEvent, render } from "@testing-library/react";
 import { FeaturedPosts } from "components";
 
+jest.mock("assets/images/svg/media/Facebook/Negative.svg", () => "svg");
+jest.mock("assets/images/svg/media/Instagram/Negative.svg", () => "svg");
+jest.mock("assets/images/svg/media/LinkedIn/Negative.svg", () => "svg");
+jest.mock("assets/images/svg/media/Twitter/Negative.svg", () => "svg");
+
 jest.mock("next-intl", () => ({
   useTranslations: jest.fn().mockReturnValue((key: string) => `Mocked ${key}`),
 }));
