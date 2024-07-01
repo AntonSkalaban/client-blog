@@ -1,6 +1,7 @@
 "use client";
 
 import { FC } from "react";
+import { useLocale } from "next-intl";
 
 import { Link, usePathname } from "../../navigation";
 import { pages } from "./constants";
@@ -8,6 +9,7 @@ import "./style.scss";
 
 export const Nav: FC = () => {
   const pathname = usePathname().split("/")[1];
+  const localActive = useLocale() as "ru" | "en";
 
   return (
     <nav className="nav">
@@ -18,7 +20,7 @@ export const Nav: FC = () => {
               className={"nav__link " + (pathname === path ? "nav__link_active" : "")}
               href={"/" + path}
             >
-              {name}
+              {name[localActive]}
             </Link>
           </div>
         );

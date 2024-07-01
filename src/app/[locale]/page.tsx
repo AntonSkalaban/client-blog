@@ -7,6 +7,7 @@ import {
   HomeHeader,
   JoinOurTeam,
   ListOfAuthors,
+  LogosList,
   SpecialPost,
   Testimonials,
   Wrapper,
@@ -25,6 +26,7 @@ const Home: FC = () => {
           <ChooseCategory />
           <SpecialPost />
           <Testimonials />
+          <LogosList />
           <ListOfAuthors authors={authors.slice(0, 4)} />
           <JoinOurTeam />
         </InfinityScroll>

@@ -1,8 +1,14 @@
-import { pagesNameEnam, pagesPathEnam } from "types/pages";
+import { pagesEnNameEnam, pagesPathEnam, pagesRuNameEnam } from "types/pages";
 
 export const pages = [
-  { name: pagesNameEnam.Home, path: pagesPathEnam.Home },
-  { name: pagesNameEnam.Blog, path: pagesPathEnam.Blog },
-  { name: pagesNameEnam.AnoutUs, path: pagesPathEnam.AnoutUs },
-  { name: pagesNameEnam.ContacUs, path: pagesPathEnam.ContacUs },
+  { name: { en: pagesEnNameEnam.Home, ru: pagesRuNameEnam.Home }, path: pagesPathEnam.Home },
+  { name: { en: pagesEnNameEnam.Blog, ru: pagesRuNameEnam.Blog }, path: pagesPathEnam.Blog },
+  {
+    name: { en: pagesEnNameEnam.AnoutUs, ru: pagesRuNameEnam.AnoutUs },
+    path: pagesPathEnam.AnoutUs,
+  },
+  {
+    name: { en: pagesEnNameEnam.ContacUs, ru: pagesRuNameEnam.ContacUs },
+    path: pagesPathEnam.ContacUs,
+  },
 ];

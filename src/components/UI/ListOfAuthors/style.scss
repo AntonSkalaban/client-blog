@@ -1,7 +1,13 @@
+@import 'assets/styles/mixins';
+
+
 .list-of-authors {
     margin-top: 128px;
     
     &__title {
         text-align: center;
     }
+    @include breakpoint(l) {
+        margin-top: 40px;
+     }
 }

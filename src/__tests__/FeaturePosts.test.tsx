@@ -8,6 +8,7 @@ jest.mock("assets/images/svg/media/Twitter/Negative.svg", () => "svg");
 
 jest.mock("next-intl", () => ({
   useTranslations: jest.fn().mockReturnValue((key: string) => `Mocked ${key}`),
+  useLocale: jest.fn().mockReturnValue(() => "en"),
 }));
 
 jest.mock("../../src/navigation", () => ({

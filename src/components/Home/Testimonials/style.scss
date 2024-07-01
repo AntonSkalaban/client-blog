@@ -4,10 +4,8 @@
 .testimonials {
     width: 100%;
     box-sizing: border-box;
-    // height: 464px;
 
     display: flex;
-    // align-items: center;
     justify-content: center;
   
     background-color: $color-yellow-light;
@@ -15,11 +13,15 @@
     margin-top: 96px;
 
       @include breakpoint(xl) {
-        margin-top: 400px;
+        margin-top: 40px;
         flex-direction: column;
         align-items: center;
         padding: 20px ;
      }
+
+     @include breakpoint(l) {
+      margin-top: 440px;
+   }
 
 
      @include breakpoint(m) {

@@ -2,7 +2,6 @@ import { useState } from "react";
 
 import { Overlay } from "components";
 
-// import  from "./styles.module.scss";
 import "./styles.scss";
 
 interface BurgerMenuProsp {

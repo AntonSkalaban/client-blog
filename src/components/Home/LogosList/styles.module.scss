@@ -1,0 +1,21 @@
+@import 'assets/styles/mixins';
+
+.logos-list {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    @include breakpoint(xl) {
+        width: 600px;
+        margin: 60px auto;
+        flex-wrap: wrap;
+     }
+
+     @include breakpoint(m) {
+        width: 340px;
+
+     }
+
+}
