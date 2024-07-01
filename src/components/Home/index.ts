@@ -4,3 +4,4 @@ export * from "./FeaturedPosts";
 export * from "./SpecialPost";
 export * from "./HomeHeader";
 export * from "./Testimonials";
+export * from "./LogosList";

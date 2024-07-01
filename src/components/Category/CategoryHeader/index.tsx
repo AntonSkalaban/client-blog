@@ -1,12 +1,15 @@
 import { FC } from "react";
+import { useLocale } from "next-intl";
 
-import { pagesNameEnam, pagesPathEnam } from "types/pages";
+import { pagesEnNameEnam, pagesPathEnam, pagesRuNameEnam } from "types/pages";
 
 import { Link } from "../../../navigation";
 import { CategoryHeaderProps } from "./types";
 import styles from "./styles.module.scss";
 
 export const CategoryHeader: FC<CategoryHeaderProps> = ({ categoryName }) => {
+  const localActive = useLocale() as "ru" | "en";
+
   return (
     <section className={styles["category-header"]}>
       <div className={styles["category-header__container"]}>
@@ -17,7 +20,7 @@ export const CategoryHeader: FC<CategoryHeaderProps> = ({ categoryName }) => {
         </p>
         <p className={`cap ${styles["category-header__cap"]}`}>
           <Link className={styles["category-header__cap"]} href={pagesPathEnam.Blog}>
-            {pagesNameEnam.Blog}
+            {(localActive === "en" ? pagesEnNameEnam : pagesRuNameEnam).Blog}
           </Link>{" "}
           {">"} {categoryName}
         </p>

@@ -16,7 +16,7 @@ export const MissionVision: FC = () => {
 
       <div className={styles["mission-vision__block"]}>
         <p className={`cap ${styles["mission-vision__cap"]}`}>{t("block2.mission")}</p>
-        <h3 className={styles["mission-vision__title"]}>{t("block2.title")} </h3>
+        <h3 className={styles["mission-vision__title"]}>{t("block2.title")}</h3>
         <p className={`text-big ${styles["mission-vision__text"]}`}>{t("block2.text")}</p>
       </div>
     </section>

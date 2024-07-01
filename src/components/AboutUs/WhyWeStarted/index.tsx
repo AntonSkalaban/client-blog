@@ -7,7 +7,7 @@ import WeStarted from "assets/images/png/why-we-started.png";
 import styles from "./styles.module.scss";
 
 export const WhyWeStarted: FC = () => {
-  const t = useTranslations("aboutUs.missionVision");
+  const t = useTranslations("aboutUs.missionVision.block2");
 
   return (
     <section className={styles["why-we-started"]}>
@@ -15,8 +15,8 @@ export const WhyWeStarted: FC = () => {
         <Image src={WeStarted} alt="we-started-image" />
       </div>
       <div className={styles["why-we-started__text-block"]}>
-        <h2 className={styles["why-we-started__title"]}>{t("title")}</h2>
-        <h4 className={styles["why-we-started__subtitle"]}>{t("subtitle")}</h4>
+        <h2 className={styles["why-we-started__title"]}>{t("mission")}</h2>
+        <h4 className={styles["why-we-started__subtitle"]}>{t("title")}</h4>
         <p className={`text-big ${styles["why-we-started__text"]}`}>{t("text")}</p>
       </div>
 
