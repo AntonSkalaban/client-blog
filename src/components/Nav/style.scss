@@ -1,3 +1,5 @@
+@import 'assets/styles/colors';
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -14,6 +16,13 @@
         &_active {
             border-bottom: 1px solid white;
         }
+
+        &:hover {
+            color: $color-yellow;
+            transition: all 0.5s;
+        }
     }
+
+
 }
 
