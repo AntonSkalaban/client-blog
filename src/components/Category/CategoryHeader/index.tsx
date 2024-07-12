@@ -1,17 +1,17 @@
 import { FC, useMemo } from "react";
 import { useLocale } from "next-intl";
 
-import { categories } from "constants/categories";
 import { pagesEnNameEnam, pagesPathEnam, pagesRuNameEnam } from "types/pages";
 
 import { Link } from "../../../navigation";
+import { findTitle } from "./helpers.ts";
 import { CategoryHeaderProps } from "./types";
 import styles from "./styles.module.scss";
 
 export const CategoryHeader: FC<CategoryHeaderProps> = ({ categoryName }) => {
   const localActive = useLocale() as "ru" | "en";
   const categoryTitle = useMemo(
-    () => categories.find((cat) => (cat.title.en = categoryName))?.title[localActive],
+    () => findTitle(categoryName, localActive),
     [categoryName, localActive],
   );
 
